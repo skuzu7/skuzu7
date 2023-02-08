@@ -1,4 +1,4 @@
-I'm a civil engineer passionate about the world of Data Science and Data Engineering.
+I'm a civil engineer passionate about the world of Data Science and web programming
 
 
 ## Details
