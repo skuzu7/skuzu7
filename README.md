@@ -3,7 +3,7 @@ I'm a civil engineer passionate about the world of Data Science and web programm
 
 ## Details
 
-- 🌱 I'm improving my habillities with Javascript and Python
+- 🌱 I'm improving my habillities.
 - 🤗 I like to experience new learnings and collaborate with knowledge sharing
 
 
