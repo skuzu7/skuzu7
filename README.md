@@ -1,49 +1,55 @@
+# Bem-vindo ao Meu Perfil GitHub! 👋
+
+Sou um desenvolvedor apaixonado por tecnologia, especializado em soluções front-end e back-end. Estou sempre buscando novos desafios para ampliar meus conhecimentos.
+
 ## 📊 Estatísticas do GitHub
 
 ![skuzu7 GitHub stats](https://github-readme-stats.vercel.app/api?username=skuzu7&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=skuzu7&layout=compact&theme=radical)
 
----
+## 🛠️ Tecnologias
 
-## 🛠️ Habilidades Técnicas
-
-Minha experiência abrange uma ampla gama de tecnologias e ferramentas, permitindo-me construir soluções robustas e escaláveis.
-
-### 💻 Front-End
-
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)
-![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white&style=flat)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=flat)
-![Javascript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
-![Typescript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat)
-![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat)
-
-### 🔙 Back-End
-
-![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat)
-![C#](https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white&style=flat)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat)
-
-### 🗄️ Bancos de Dados
-
-![SQL](https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white&style=flat)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white&style=flat)
-![SQLite](https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=flat)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat)
-
-### 🏗️ Arquitetura e Padrões de Design
-
-- Clean Architecture
-- Design Patterns
+Front-End | Back-End | Bancos de Dados
+--- | --- | ---
+React | Node.js | SQL
+Angular | C# | MongoDB
+Next.js | Python | SQLite
+Javascript | | MySQL
+Typescript | | 
+CSS | | 
+HTML5 | | 
 
 ## 🌐 Idiomas
 
-![Inglês](https://img.shields.io/badge/Inglês-B1-%2300f.svg?&style=flat&logo=english&logoColor=white) **Inglês**: Nível B1 (Avançado)
+- **Inglês**: Avançado
 
 ---
 
 ## 📫 Contato
 
-Interessado em colaborar ou discutir oportunidades? Vamos conversar!
+- **[Email](mailto:caetanoproducoes@gmail.com)**
 
-- **Email:** caetanoproducoes@gmail.com
+## 🔗 Links
+
+- **[Ver Repositórios](https://github.com/skuzu7?tab=repositories)**
+
+---
+
+## 🎨 Ícones das Tecnologias
+
+<div style="display: flex; gap: 10px;">
+  <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge&logoWidth=20" alt="React" />
+  <img src="https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white&style=for-the-badge&logoWidth=20" alt="Angular" />
+  <img src="https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=for-the-badge&logoWidth=20" alt="Next.js" />
+  <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=for-the-badge&logoWidth=20" alt="Node.js" />
+  <img src="https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white&style=for-the-badge&logoWidth=20" alt="C#" />
+  <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge&logoWidth=20" alt="Python" />
+  <img src="https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge&logoWidth=20" alt="SQL" />
+  <img src="https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge&logoWidth=20" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge&logoWidth=20" alt="SQLite" />
+  <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge&logoWidth=20" alt="MySQL" />
+</div>
+
+---
+
+Obrigado por visitar meu perfil! Estou sempre interessado em novos projetos e desafios. Vamos nos conectar!
