@@ -1,6 +1,6 @@
 # Bem-vindo ao Meu Perfil GitHub! 👋
 
-## 📊 Minhas Estatísticas do GitHub
+## 📊 Minhas Estatísticas do GitHuba
 
 ![SeuNomeDeUsuário GitHub stats](https://github-readme-stats.vercel.app/api?username=skuzu7&show_icons=true&theme=radical)
 
