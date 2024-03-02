@@ -1,6 +1,7 @@
 # 👋 Welcome to My GitHub Profile!
 
-I'm passionate about technological innovation and specialize in creating creative solutions for both front-end and back-end development.
+![image](https://github.com/skuzu7/skuzu7/assets/103225007/1b497c3b-874d-49b8-8208-7db5ff2f8157)
+
 
 
 ## 📊 Stats
@@ -22,10 +23,15 @@ I'm passionate about technological innovation and specialize in creating creativ
 ![Databases](https://skillicons.dev/icons?i=mysql,mongodb,sqlite)
 
 
-## 🚀 Connect with Me
 
-[![Instagram](https://skillicons.dev/icons?i=instagram)](https://instagram.com/antonio_jsx)
-[![Email](https://skillicons.dev/icons?i=gmail)](mailto:caetanoproducoes@gmail.com)
+
+If you want to try a business contact, here it's my business contacts:
+
+
+WPP | TELEGRAM : +55 16997166537
+
+
+Email: caetanoproducoes@gmail.com
 
 
 ## 🔗 Explore
