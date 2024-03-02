@@ -4,7 +4,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 
 ## 🚀 Connect with Me
 
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5516997166537)
+[![WhatsApp](https://skillicons.dev/icons?i=whatsapp)](https://api.whatsapp.com/send?phone=5516997166537)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/antonio_jsx)
 
 ## 📊 Stats
@@ -17,7 +17,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 ## 🛠️ Technologies
 
 ### Front-End
-[![My Skills](https://skillicons.dev/icons?i=react,angular,css,html5)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,angular,css,html,tailwind,boostrap)]
 
 ### Back-End
 <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat-square" height="25" />
