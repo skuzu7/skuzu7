@@ -5,7 +5,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 ## 🚀 Connect with Me
 
 [![WhatsApp](https://skillicons.dev/icons?i=whatsapp)](https://api.whatsapp.com/send?phone=5516997166537)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://instagram.com/antonio_jsx)
+[![Instagram](https://skillicons.dev/icons?i=instagram)](https://instagram.com/antonio_jsx)
 
 ## 📊 Stats
 
@@ -17,28 +17,24 @@ I'm passionate about technological innovation and specialize in creating creativ
 ## 🛠️ Technologies
 
 ### Front-End
-[![My Skills](https://skillicons.dev/icons?i=react,angular,css,html,tailwind,boostrap)]
+![Front-End](https://skillicons.dev/icons?i=react,angular,nextjs,js,ts,css,html,tailwind,bootstrap)
 
 ### Back-End
-<img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat-square" height="25" />
-<img src="https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white&style=flat-square" height="25" />
-<img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat-square" height="25" />
+![Back-End](https://skillicons.dev/icons?i=nodejs,csharp,python)
 
 ### Databases
-<img src="https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white&style=flat-square" height="25" />
-<img src="https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white&style=flat-square" height="25" />
-<img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" height="25" />
+![Databases](https://skillicons.dev/icons?i=mysql,mongodb,sqlite)
 
 ## 🌐 Languages
 
-- **English**: Advanced
+![Languages](https://skillicons.dev/icons?i=eng)
 
 ## 📫 Contact
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:yourEmail)
+[![Email](https://skillicons.dev/icons?i=gmail)](mailto:yourEmail)
 
 ## 🔗 Explore
 
-[![Repositories](https://img.shields.io/badge/-Repositories-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/skuzu7?tab=repositories)
+[![Repositories](https://skillicons.dev/icons?i=github)](https://github.com/skuzu7?tab=repositories)
 
 I'm always looking for new challenges and opportunities to learn and grow. Thanks for visiting my profile!
