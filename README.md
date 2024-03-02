@@ -6,6 +6,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 
 [![WhatsApp](https://skillicons.dev/icons?i=whatsapp)](https://api.whatsapp.com/send?phone=5516997166537)
 [![Instagram](https://skillicons.dev/icons?i=instagram)](https://instagram.com/antonio_jsx)
+[![Email](https://skillicons.dev/icons?i=gmail)](mailto:caetanoproducoes@gmail.com)
 
 ## 📊 Stats
 
@@ -20,21 +21,14 @@ I'm passionate about technological innovation and specialize in creating creativ
 ![Front-End](https://skillicons.dev/icons?i=react,angular,nextjs,js,ts,css,html,tailwind,bootstrap)
 
 ### Back-End
-![Back-End](https://skillicons.dev/icons?i=nodejs,csharp,python)
+![Back-End](https://skillicons.dev/icons?i=nodejs,python)
 
 ### Databases
 ![Databases](https://skillicons.dev/icons?i=mysql,mongodb,sqlite)
 
-## 🌐 Languages
-
-![Languages](https://skillicons.dev/icons?i=eng)
-
-## 📫 Contact
-
-[![Email](https://skillicons.dev/icons?i=gmail)](mailto:yourEmail)
 
 ## 🔗 Explore
 
 [![Repositories](https://skillicons.dev/icons?i=github)](https://github.com/skuzu7?tab=repositories)
 
-I'm always looking for new challenges and opportunities to learn and grow. Thanks for visiting my profile!
+
