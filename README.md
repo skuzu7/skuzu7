@@ -1,6 +1,6 @@
 # 👋 Welcome to My GitHub Profile!
 
-![image](https://github.com/skuzu7/skuzu7/assets/103225007/1b497c3b-874d-49b8-8208-7db5ff2f8157)
+
 
 
 
