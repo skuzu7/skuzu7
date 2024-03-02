@@ -17,9 +17,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 ## 🛠️ Technologies
 
 ### Front-End
-<img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat-square" height="25" /> 
-<img src="https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white&style=flat-square" height="25" /> 
-<img src="https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=flat-square" height="25" />
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 
 ### Back-End
 <img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat-square" height="25" />
