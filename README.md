@@ -4,7 +4,7 @@ I'm passionate about technological innovation and specialize in creating creativ
 
 ## 🚀 Connect with Me
 
-[![WhatsApp](https://skillicons.dev/icons?i=whatsapp)](https://api.whatsapp.com/send?phone=5516997166537)
+[![WhatsApp](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fwhatsapp_1384023&psig=AOvVaw05fh7vdBXCnNfJdXkBEsic&ust=1709425339040000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMiP0_en1IQDFQAAAAAdAAAAABAE)](https://api.whatsapp.com/send?phone=5516997166537)
 [![Instagram](https://skillicons.dev/icons?i=instagram)](https://instagram.com/antonio_jsx)
 [![Email](https://skillicons.dev/icons?i=gmail)](mailto:caetanoproducoes@gmail.com)
 
