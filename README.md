@@ -1,35 +1,36 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Courier+Prime&weight=400&size=25&pause=1000&color=808080&background=000000&center=true&vCenter=true&width=435&lines=ENTROPY_INCREASING...;CONTROL_IS_AN_ILLUSION;I_AM_THE_GLITCH;SYSTEM_HALTED" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=100&color=FF0000&background=000000&center=true&vCenter=true&width=435&lines=FATAL_ERROR:_SEGFAULT;CVE-2025-XXXX_DETECTED;MEMORY_CORRUPTION;REMOTE_CODE_EXECUTION" />
 
 <br>
 
-<a href="https://linkedin.com/in/SEU_USUARIO"><img src="https://img.shields.io/badge/LINKEDIN-VOID-000000?style=for-the-badge&logo=linkedin&logoColor=555"/></a>
-<a href="https://app.hackthebox.com/profile/SEU_ID"><img src="https://img.shields.io/badge/HTB-ROOT-000000?style=for-the-badge&logo=hack-the-box&logoColor=555"/></a>
+<a href="https://linkedin.com/in/SEU_USUARIO"><img src="https://img.shields.io/badge/EXPLOIT-LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://app.hackthebox.com/profile/SEU_ID"><img src="https://img.shields.io/badge/POC-HACKTHEBOX-000000?style=for-the-badge&logo=hack-the-box&logoColor=red"/></a>
 
 </div>
 
+### 🩸 `poc_exploit.c`
+
 ```c
-// memory_dump.c
+#include <stdio.h>
+#include <stdlib.h>
 
-void* reality = NULL;
+// TARGET:   Google Cloud Platform & K8s Infrastructure
+// IMPACT:   Critical (Score: 10.0)
+// STATUS:   Unpatched / In the Wild
 
-struct Operator {
-    char* archetype;
-    char* philosophy;
-    void* target;
-};
+void get_shell() {
+    char *args[] = {"/bin/sh", NULL};
+    execve(args[0], args, NULL);
+}
 
 int main() {
-    struct Operator me;
+    printf("[!] Triggering Heap Overflow...\n");
+    printf("[+] EIP Overwritten. Jumping to shellcode...\n");
     
-    me.archetype  = "Red Team // Phantom";
-    me.philosophy = "Security is just a delay, not a barrier.";
-    me.target     = 0xDEADBEEF; // GCP_K8s_Infrastructure
-
-    // While the blue team sleeps, we traverse the graph.
-    while(1) {
-        escalate_privileges();
-        remain_unseen();
-    }
+    // Injecting malicious logic into business logic
+    void (*payload)() = (void (*)()) &get_shell;
+    payload();
+    
+    return 0; // Never reached
 }
