@@ -14,6 +14,8 @@
   <img src="https://img.shields.io/github/followers/skuzu7?label=Followers&style=flat&color=8B5CF6&logo=github" alt="followers" />
   <img src="https://img.shields.io/badge/Based%20in-Araraquara%2C%20Brazil-8B5CF6?style=flat&logo=googlemaps&logoColor=white" alt="location" />
   <a href="mailto:juninho.m4@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" alt="email" /></a>
+  <a href="https://www.linkedin.com/in/antonioccjr/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="linkedin" /></a>
+  <a href="https://www.instagram.com/antonio_jsx/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" alt="instagram" /></a>
 </div>
 
 <br />
