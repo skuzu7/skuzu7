@@ -1,11 +1,11 @@
 <!-- HEADER -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Antonio%20Caetano&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Full-Stack%20Developer%20%C2%B7%20Automation%20%26%20AI%20Tooling&descAlignY=58&descSize=18" width="100%" alt="header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Antonio%20Caetano&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20%C2%B7%20Agents%20%C2%B7%20Automation%20%C2%B7%20LLM%20Apps&descAlignY=58&descSize=18" width="100%" alt="header" />
 </div>
 
 <!-- TYPING SUBTITLE -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=8B5CF6&center=true&vCenter=true&width=650&lines=Building+SaaS+from+idea+to+production;Next.js+%7C+TypeScript+%7C+Python+%7C+Rust;Automation+%26+AI+tooling+builder;Shipping+fast%2C+breaking+little" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=8B5CF6&center=true&vCenter=true&width=680&lines=AI+Engineer+%E2%80%94+agents%2C+automation+%26+LLM+apps;Building+autonomous+agents+%26+MCP+servers;LLM-driven+browser+automation;Python+%7C+TypeScript+%7C+Rust" alt="typing" />
 </div>
 
 <!-- BADGES -->
@@ -18,14 +18,14 @@
 
 <br />
 
-## 👨‍💻 About Me
+## 🤖 About Me
 
-- 🌎 Full-stack developer based in **Araraquara, Brazil**
-- 🧩 I build **SaaS products end-to-end** — idea → design → production — with **Next.js**, **TypeScript** and **Python**
-- 🤖 Deep into **automation & AI tooling**: browser automation, LLM-driven workflows, MCP servers
-- 🦀 Sharpening **Rust** for performance-critical work
-- 📊 Comfortable across the whole stack — frontend, backend, data, and a bit of growth
-- 💬 Ask me about **Next.js**, **browser automation**, or shipping products fast
+- 🌎 **AI Engineer** based in **Araraquara, Brazil**
+- 🧠 I build **autonomous agents, LLM tooling and MCP servers**
+- 🕸️ **LLM-driven browser automation** & intelligent scraping
+- ✨ **Generative AI** apps and integrations (OpenAI / Anthropic)
+- 🧰 Full-stack when that's what ships the product — **Python**, **TypeScript**, **Rust**
+- 💬 Ask me about **AI agents**, **MCP**, or **browser automation**
 - 📫 Reach me at **juninho.m4@gmail.com**
 
 <br />
@@ -34,19 +34,32 @@
 
 <div align="center">
 
+**AI & Automation**
+
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-D4A27F?style=flat-square&logo=anthropic&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-1f6feb?style=flat-square)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=ts,js,python,rust,java,html,css&theme=dark" alt="languages" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,rust&theme=dark" alt="languages" />
 
-**Frameworks · Libraries · Tools**
+**Web & Backend**
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,angular,vue,nodejs,express,spring,tailwind,bootstrap,prisma,postgres,git,vercel&theme=dark&perline=13" alt="frameworks" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,angular,vue,tailwind,prisma,postgres&theme=dark&perline=9" alt="web-backend" />
 
 </div>
 
 <br />
 
 ## 🚀 Featured Projects
+
+### 🤖 AI &amp; Automation
 
 <table>
 <tr>
@@ -56,8 +69,9 @@
 Undetectable browser automation an LLM can drive — Camoufox stealth + a 17-tool MCP server.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Playwright](https://img.shields.io/badge/MCP-1f6feb?style=flat-square)
-![Automation](https://img.shields.io/badge/Automation-8B5CF6?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-1f6feb?style=flat-square)
+![LLM](https://img.shields.io/badge/LLM-8B5CF6?style=flat-square)
+![Automation](https://img.shields.io/badge/Automation-2EAD33?style=flat-square)
 
 </td>
 <td width="50%" valign="top">
@@ -66,10 +80,16 @@ Undetectable browser automation an LLM can drive — Camoufox stealth + a 17-too
 Translate any PDF into another language while preserving layout, fonts and images.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/AI%20Translation-8B5CF6?style=flat-square)
 ![PDF](https://img.shields.io/badge/PDF-EC1C24?style=flat-square&logo=adobeacrobatreader&logoColor=white)
 
 </td>
 </tr>
+</table>
+
+### 🌐 Full-Stack
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
