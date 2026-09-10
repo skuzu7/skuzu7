@@ -26,7 +26,7 @@ The deliverable is the patch and the test that keeps the flaw from coming back â
 
 | Project | What it demonstrates |
 |---|---|
-| **[CSA-LAB](https://github.com/skuzu7/CSA-LAB)** | Reproducible AppSec lab. 5 documented findings (IDOR, SQLi, path traversal, session forgery, business-logic) with proof-of-concept tests, patched variants, and a passing regression suite. Localhost only. |
+| **[CSA-LAB](https://github.com/skuzu7/CSA-LAB)** | Reproducible AppSec lab. 6 documented findings (IDOR, SQLi, path traversal, session forgery, business-logic, SSRF) with proof-of-concept tests, patched variants, and a passing regression suite. Localhost only. |
 | **[freeband-nextjs](https://github.com/skuzu7/freeband-nextjs)** | Next.js/TypeScript app with a STRIDE threat model, documented security review, authentication hardening, regression tests and GitHub Actions CI. |
 | **[Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project)** | Server-side Stripe payment integration with documented trust boundaries and a vulnerability reporting policy. |
 | **[CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian)** | Browser automation toolkit (Camoufox + MCP server) for authorized QA, accessibility auditing and agent evaluation. |
