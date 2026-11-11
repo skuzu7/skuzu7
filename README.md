@@ -1,43 +1,33 @@
-## Antonio Caetano — Software Engineer / Defensive Security Researcher
+# Antonio Caetano
 
-Independent developer working on application security: secure code review, threat modeling, and
-vulnerability remediation with regression coverage. Based in Araraquara, Brazil.
+**Software Engineer · Defensive Application Security · Brazil**
 
-**Focus:** finding real flaws in software I own or am authorized to test, fixing them, and proving
-the fix holds with automated tests.
+I build software and maintain an independent, hands-on application-security portfolio. My focus is **authorized testing, clear evidence, effective remediation, and regression coverage** — not vulnerability counts without working fixes.
 
----
-
-### What I test
-
-Only software I build, deliberately vulnerable applications I create, and local containerized labs.
-No third-party systems. Scope and authorization are documented explicitly in each project —
-see [AUTHORIZATION.md](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md).
-
-### Method
-
-`discovery → controlled validation → root cause → remediation → regression test → write-up`
-
-The deliverable is the patch and the test that keeps the flaw from coming back — not the exploit.
+[**Explore the security evidence portfolio →**](SECURITY_PORTFOLIO.md) · [**See the reproducible lab →**](https://github.com/skuzu7/CSA-LAB) · [**LinkedIn →**](https://br.linkedin.com/in/antonioccjr)
 
 ---
 
-### Selected work
+## Defensive security work
 
-| Project | What it demonstrates |
-|---|---|
-| **[CSA-LAB](https://github.com/skuzu7/CSA-LAB)** | Reproducible AppSec lab. 6 documented findings (IDOR, SQLi, path traversal, session forgery, business-logic, SSRF) with proof-of-concept tests, patched variants, and a passing regression suite. Localhost only. |
-| **[freeband-nextjs](https://github.com/skuzu7/freeband-nextjs)** | Next.js/TypeScript app with a STRIDE threat model, documented security review, authentication hardening, regression tests and GitHub Actions CI. |
-| **[Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project)** | Server-side Stripe payment integration with documented trust boundaries and a vulnerability reporting policy. |
-| **[CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian)** | Browser automation toolkit (Camoufox + MCP server) for authorized QA, accessibility auditing and agent evaluation. |
-| **[TranslatePDF](https://github.com/skuzu7/TranslatePDF)** | PDF translation preserving layout, fonts and images. |
+| Project | Demonstrated work | Evidence |
+| --- | --- | --- |
+| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | Owned, localhost-only AppSec lab covering IDOR, SQL injection, path traversal, session forgery, business logic, and SSRF; six documented fixes and regression cases | [Findings](https://github.com/skuzu7/CSA-LAB#findings) · [Authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) · [CI](https://github.com/skuzu7/CSA-LAB/actions) |
+| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | First-party web-app security: STRIDE threat modeling, session/authentication hardening, code review and automated testing | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) · [Review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) · [CI](https://github.com/skuzu7/freeband-nextjs/actions) |
+| [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP-driven browser automation for owned/authorized QA, accessibility checks, and agent evaluation | [Documentation](https://github.com/skuzu7/CSA-Obsidian) |
 
----
+## Engineering projects
 
-### Stack
+- [TranslatePDF](https://github.com/skuzu7/TranslatePDF) — layout-aware PDF translation.
+- [Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project) — e-commerce/payment integration and security boundary documentation.
+- [Portfolio](https://github.com/skuzu7/Portfolio) — personal web portfolio.
 
-TypeScript · Next.js · Python · Rust · PostgreSQL · Docker · GitHub Actions
+## Method and boundaries
 
-### Contact
+**Scope & authorization → threat model → controlled reproduction → root-cause analysis → patch → regression test → documentation.**
 
-[LinkedIn](https://br.linkedin.com/in/antonioccjr)
+Security work shown here is based on software I own or environments I am explicitly authorized to use. **CSA-LAB findings are deliberately constructed local exercises**: they are not claims of external penetration tests, CVEs, bug-bounty rewards, or certifications. The [evidence index](SECURITY_PORTFOLIO.md) separates documented practice from independent verification.
+
+**Tech:** TypeScript · Next.js · Python · Rust · PostgreSQL · Docker · GitHub Actions
+
+**Contact:** [LinkedIn](https://br.linkedin.com/in/antonioccjr)
