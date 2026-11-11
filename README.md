@@ -2,32 +2,33 @@
 
 **Software Engineer · Defensive Application Security · Brazil**
 
-I build software and maintain an independent, hands-on application-security portfolio. My focus is **authorized testing, clear evidence, effective remediation, and regression coverage** — not vulnerability counts without working fixes.
+I build and review software with an evidence-first security workflow: **written scope → threat model → controlled reproduction → root cause → remediation → regression test → reviewable documentation**.
 
-[**Explore the security evidence portfolio →**](SECURITY_PORTFOLIO.md) · [**See the reproducible lab →**](https://github.com/skuzu7/CSA-LAB) · [**LinkedIn →**](https://br.linkedin.com/in/antonioccjr)
+[**Security evidence index**](SECURITY_PORTFOLIO.md) · [**Five-minute reviewer guide**](REVIEWER_GUIDE.md) · [**GitHub**](https://github.com/skuzu7) · [**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
 
----
+## Selected security work
 
-## Defensive security work
-
-| Project | Demonstrated work | Evidence |
+| Project | Inspectable artifacts | What they demonstrate |
 | --- | --- | --- |
-| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | Owned, localhost-only AppSec lab covering IDOR, SQL injection, path traversal, session forgery, business logic, and SSRF; six documented fixes and regression cases | [Findings](https://github.com/skuzu7/CSA-LAB#findings) · [Authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) · [CI](https://github.com/skuzu7/CSA-LAB/actions) |
-| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | First-party web-app security: STRIDE threat modeling, session/authentication hardening, code review and automated testing | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) · [Review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) · [CI](https://github.com/skuzu7/freeband-nextjs/actions) |
-| [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP-driven browser automation for owned/authorized QA, accessibility checks, and agent evaluation | [Documentation](https://github.com/skuzu7/CSA-Obsidian) |
+| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | [Six local case studies](https://github.com/skuzu7/CSA-LAB/tree/main/writeups), [authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md), [vulnerable tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py), [regression tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py) | Intentionally planted IDOR, SQLi, path traversal, session forgery, business-logic flaw and SSRF; controlled validation and patch checks |
+| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | [STRIDE threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [CI workflow](https://github.com/skuzu7/freeband-nextjs/blob/main/.github/workflows/ci.yml) | First-party authentication/session hardening, secure code review, test coverage and documented residual risks |
+| [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | [Architecture and responsible-use documentation](https://github.com/skuzu7/CSA-Obsidian) | MCP-based browser automation for QA and agent evaluation in owned or explicitly authorized environments |
 
-## Engineering projects
+**Verification status:** a [CSA-LAB CI/reproducibility correction](https://github.com/skuzu7/CSA-LAB/pull/2) has been proposed. Review its checks before treating the new runner as verified; a documentation claim is not a substitute for a passing test run.
 
-- [TranslatePDF](https://github.com/skuzu7/TranslatePDF) — layout-aware PDF translation.
-- [Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project) — e-commerce/payment integration and security boundary documentation.
-- [Portfolio](https://github.com/skuzu7/Portfolio) — personal web portfolio.
+## Security research focus
 
-## Method and boundaries
+- Application-security triage, authorization and session-boundary reviews.
+- Defensive vulnerability reproduction and patch verification on owned/local fixtures.
+- Threat modeling and test design for first-party web applications and AI-agent workflows.
+- Human-reviewed, auditable AI assistance in security engineering.
 
-**Scope & authorization → threat model → controlled reproduction → root-cause analysis → patch → regression test → documentation.**
+**Research boundaries:** No unsanctioned scanning, exploitation of third-party systems or access to real credentials/data. The CSA-LAB exercises are deliberately constructed and are **not** external pentest findings, CVEs, paid bounties or professional certifications. I make no claim of privileged-access-program approval. See the [evidence and limitations guide](REVIEWER_GUIDE.md).
 
-Security work shown here is based on software I own or environments I am explicitly authorized to use. **CSA-LAB findings are deliberately constructed local exercises**: they are not claims of external penetration tests, CVEs, bug-bounty rewards, or certifications. The [evidence index](SECURITY_PORTFOLIO.md) separates documented practice from independent verification.
+## Other engineering work
 
-**Tech:** TypeScript · Next.js · Python · Rust · PostgreSQL · Docker · GitHub Actions
+[TranslatePDF](https://github.com/skuzu7/TranslatePDF) — layout-aware PDF translation · [Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project) — commerce engineering · [Portfolio](https://github.com/skuzu7/Portfolio) — web portfolio
+
+**Tech:** Python · TypeScript · Next.js · Rust · SQL · Docker · GitHub Actions
 
 **Contact:** [LinkedIn](https://br.linkedin.com/in/antonioccjr)
