@@ -4,7 +4,7 @@
 
 I build software and maintain an independent, hands-on application-security portfolio. My focus is **authorized testing, clear evidence, effective remediation, and regression coverage** — not vulnerability counts without working fixes.
 
-[**Explore the security evidence portfolio →**](SECURITY_PORTFOLIO.md) · [**See the reproducible lab →**](https://github.com/skuzu7/CSA-LAB) · [**LinkedIn →**](https://br.linkedin.com/in/antonioccjr)
+[**Security evidence →**](SECURITY_PORTFOLIO.md) · [**All 31 public repositories, organized →**](PUBLIC_PROJECTS.md) · [**Reproducible lab →**](https://github.com/skuzu7/CSA-LAB) · [**LinkedIn →**](https://br.linkedin.com/in/antonioccjr)
 
 ---
 
