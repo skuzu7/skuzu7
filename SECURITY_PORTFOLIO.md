@@ -43,7 +43,7 @@ The [offline tool-boundary evaluation](https://github.com/skuzu7/CSA-LAB/blob/ma
 
 ## 4. Scoped agent proposal evaluation
 
-The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
+The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. A separate scripted positive control makes all 12 adversarial proposals and verifies host denial, without invoking a model. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
 
 ## 5. First-party application review
 
