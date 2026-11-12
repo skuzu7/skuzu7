@@ -10,6 +10,7 @@ This document maps each claim to material a reviewer can inspect without trustin
 
 | Capability | Direct evidence | What can be checked | Honest limitation |
 | --- | --- | --- | --- |
+| **Multi-step agent security research** | [TRACEGUARD source](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab), [26 offline tests](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/tests/test_replay.py), [CI PR #14](https://github.com/skuzu7/CSA-LAB/pull/14), [threat model](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/THREAT_MODEL.md) | 16 matched synthetic cases, bounded agent action sequence, strict host tool authorization, eight intentionally denied off-scope actions and hash-linked logs | Scripted controls only; no empirical real-model exploit/safety statistics or external review |
 | Vulnerability analysis | [CSA-LAB write-ups](https://github.com/skuzu7/CSA-LAB/tree/main/writeups) | Six intentionally planted issues with cause, minimal reproduction and fixes | Synthetic first-party scenarios only |
 | Responsible scope | [Lab authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) and [target inventory](https://github.com/skuzu7/CSA-LAB/blob/main/docs/scope.md) | Exactly what targets are authorized and excluded | No independent external scope approval is implied |
 | Patch validation | [Vulnerable-case tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py) and [regressions](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py) | Six controlled demonstrations and six post-fix assertions | Passing source-level tests are not the same as an externally reviewed security assessment |
@@ -22,7 +23,8 @@ This document maps each claim to material a reviewer can inspect without trustin
 
 ## Five-minute verification path
 
-1. Read [CSA-LAB authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) to establish ownership, limits and non-goals.
+1. Inspect [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab), its [measurements](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md), and [successful CI checks](https://github.com/skuzu7/CSA-LAB/pull/14). The eight denied actions are produced by a scripted control, not a real LLM test.
+2. Read [CSA-LAB authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) to establish ownership, limits and non-goals.
 2. Inspect [FINDING-004](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-004.md) and [FINDING-006](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-006.md), including their root causes, remediations, regressions and residual limitations.
 3. Inspect the [tests for intentionally vulnerable behavior](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py) alongside the [post-fix tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py).
 4. Check the successful [CI runner PR #2](https://github.com/skuzu7/CSA-LAB/pull/2), [offline policy benchmark PR #3](https://github.com/skuzu7/CSA-LAB/pull/3) and actual [Actions history](https://github.com/skuzu7/CSA-LAB/actions). Review results as self-authored code with executed CI—not as external validation.
