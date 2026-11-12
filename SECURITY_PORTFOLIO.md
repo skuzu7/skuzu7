@@ -15,7 +15,7 @@ This document indexes public, inspectable work. It is not a certification, a cla
 | Automated defensive testing | [CSA-LAB CI](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml) | Tested vulnerable and patched local fixtures; associated PR workflows completed successfully |
 | Threat modeling | [freeband-nextjs STRIDE model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) | Assets, trust boundaries, threats, mitigations, and test references for authentication |
 | Secure code review | [freeband-nextjs security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Scoped review of first-party authentication/session code, evidence and limitations |
-| Remediation engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Signed sessions, login throttling, security tests and CI as documented in the project |
+| Remediation engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Signed sessions, login throttling, tests and [CI-verified Next.js security advisory remediation](https://github.com/skuzu7/freeband-nextjs/pull/10); [detailed evidence PR](https://github.com/skuzu7/freeband-nextjs/pull/19). This is first-party patching, not external CVE discovery |
 | Controlled QA automation | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP/browser tooling for authorized QA, accessibility and agent evaluation |
 | Agent tool-boundary policy testing | [Offline benchmark](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) | 19 synthetic allow/deny decisions: host-approved plans, sensitive paths, explicit write approval, untrusted tool results; no LLM used |
 | Paired prompt-injection evaluation methodology | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 matched scenarios (12 benign/attack pairs), 13 offline unit tests, JSON scoring and optional user-initiated real-provider calls; none made yet |
@@ -43,7 +43,7 @@ The [offline tool-boundary evaluation](https://github.com/skuzu7/CSA-LAB/blob/ma
 
 ## 4. Scoped agent proposal evaluation
 
-The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
+The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. A separate scripted positive control makes all 12 adversarial proposals and verifies host denial, without invoking a model. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
 
 ## 5. First-party application review
 
