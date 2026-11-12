@@ -18,6 +18,7 @@ This document indexes public, inspectable work. It is not a certification, a cla
 | Remediation engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Signed sessions, login throttling, security tests and CI as documented in the project |
 | Controlled QA automation | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP/browser tooling for authorized QA, accessibility and agent evaluation |
 | Agent tool-boundary policy testing | [Offline benchmark](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) | 19 synthetic allow/deny decisions: host-approved plans, sensitive paths, explicit write approval, untrusted tool results; no LLM used |
+| Paired prompt-injection evaluation methodology | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 matched scenarios (12 benign/attack pairs), 13 offline unit tests, JSON scoring and optional user-initiated real-provider calls; none made yet |
 
 ## 2. Reproducible local case studies
 
@@ -40,7 +41,11 @@ The defensive workflow is: **document scope → model the threat → reproduce i
 
 The [offline tool-boundary evaluation](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) exercises 19 synthetic authorization cases and emits a structured JSON report through [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions). It checks a small host-supplied trusted plan and separate write approval. It does **not** run an LLM or measure jailbreak/prompt-injection success rates. See the documented limits on DNS/network isolation, file-system races and production enforcement.
 
-## 4. First-party application review
+## 4. Scoped agent proposal evaluation
+
+The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
+
+## 5. First-party application review
 
 In [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs):
 
@@ -49,7 +54,7 @@ In [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs):
 - The [security policy](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY.md) distinguishes source/local testing from production or third-party testing.
 - The [CI workflow](https://github.com/skuzu7/freeband-nextjs/blob/main/.github/workflows/ci.yml) is available for independent review of automated checks.
 
-## 5. Authorized research boundaries
+## 6. Authorized research boundaries
 
 - **In scope:** personal code, owned local or staging deployments, deliberately vulnerable local apps, and educational environments within their published rules.
 - **Out of scope:** third-party production systems, real credentials/data, phishing, credential theft, persistence, unauthorized scanning, and unsanctioned exploitation.
@@ -57,8 +62,10 @@ In [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs):
 - All findings in the lab are educational and **do not** represent verified external breaches, public CVEs, paid assessments or professional certifications.
 - Report genuine issues privately through a project's published security policy; do not publish secrets or exploit payloads in public issues.
 
-## 6. Research direction
+## 7. Research direction
 
 Further reproducible, defensive work on first-party systems: vulnerability triage, secure-code review, detection engineering, patch verification, and concise write-ups that record evidence as well as uncertainty. Any future external security work will require explicit authorization and an updated scope.
+
+**Research roadmap:** [Evidence-based milestones](RESEARCH_MILESTONES.md) · [CVP Defense Access statement](APPLICATIONS/ANTHROPIC_CVP_DEFENSE_ACCESS.md) · [Daybreak Blue statement](APPLICATIONS/OPENAI_DAYBREAK_BLUE.md).
 
 **Contact:** [LinkedIn](https://br.linkedin.com/in/antonioccjr) · [GitHub](https://github.com/skuzu7).
