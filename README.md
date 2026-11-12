@@ -14,7 +14,7 @@ I build and review software with an evidence-first security workflow: **written 
 | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | [STRIDE threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [CI workflow](https://github.com/skuzu7/freeband-nextjs/blob/main/.github/workflows/ci.yml) | First-party authentication/session hardening, secure code review, test coverage and documented residual risks |
 | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | [Architecture and responsible-use documentation](https://github.com/skuzu7/CSA-Obsidian) | MCP-based browser automation for QA and agent evaluation in owned or explicitly authorized environments |
 
-**Verification status:** a [CSA-LAB CI/reproducibility correction](https://github.com/skuzu7/CSA-LAB/pull/2) has been proposed. Review its checks before treating the new runner as verified; a documentation claim is not a substitute for a passing test run.
+**Reproducibility:** [CSA-LAB CI correction PR #2](https://github.com/skuzu7/CSA-LAB/pull/2) and [agent tool-boundary benchmark PR #3](https://github.com/skuzu7/CSA-LAB/pull/3) are merged; both associated GitHub Actions checks passed. The agent test suite has 19 **synthetic, deterministic policy cases**, not 19 real-world vulnerabilities or an LLM jailbreak score. [Methodology and limits](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md).
 
 ## Security research focus
 

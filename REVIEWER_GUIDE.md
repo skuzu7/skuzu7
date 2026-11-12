@@ -13,7 +13,8 @@ This document maps each claim to material a reviewer can inspect without trustin
 | Vulnerability analysis | [CSA-LAB write-ups](https://github.com/skuzu7/CSA-LAB/tree/main/writeups) | Six intentionally planted issues with cause, minimal reproduction and fixes | Synthetic first-party scenarios only |
 | Responsible scope | [Lab authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) and [target inventory](https://github.com/skuzu7/CSA-LAB/blob/main/docs/scope.md) | Exactly what targets are authorized and excluded | No independent external scope approval is implied |
 | Patch validation | [Vulnerable-case tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py) and [regressions](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py) | Six controlled demonstrations and six post-fix assertions | Passing source-level tests are not the same as an externally reviewed security assessment |
-| CI reproducibility | [Proposed CI and runner correction](https://github.com/skuzu7/CSA-LAB/pull/2) and [Actions history](https://github.com/skuzu7/CSA-LAB/actions) | Whether tests actually execute successfully in CI | The PR must pass its checks and be merged before main-branch reproducibility is claimed |
+| CI reproducibility | [Merged CI runner correction](https://github.com/skuzu7/CSA-LAB/pull/2) and [Actions history](https://github.com/skuzu7/CSA-LAB/actions) | Local vulnerable/patch regressions ran successfully under GitHub Actions | Passing CI is not third-party validation or proof of complete vulnerability coverage |
+| Tool-boundary authorization for AI agents | [Merged offline benchmark](https://github.com/skuzu7/CSA-LAB/pull/3) and [methodology](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) | 19 synthetic allow/deny policy assertions, structured report, first-party CI | No live model, prompt-injection robustness rate or production sandbox claim |
 | Production-oriented secure engineering | [freeband-nextjs STRIDE model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) and [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Auth/session trust boundaries, tests, findings, mitigations and known weaknesses | Scoped first-party review; not a commissioned or external audit |
 | Engineering automation | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP integration, tests and documentation for controlled browser QA | Browser-automation capability is not evidence of authorized penetration tests |
 
@@ -22,7 +23,7 @@ This document maps each claim to material a reviewer can inspect without trustin
 1. Read [CSA-LAB authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) to establish ownership, limits and non-goals.
 2. Inspect [FINDING-004](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-004.md) and [FINDING-006](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-006.md), including their root causes, remediations, regressions and residual limitations.
 3. Inspect the [tests for intentionally vulnerable behavior](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py) alongside the [post-fix tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py).
-4. Check [CSA-LAB PR #2](https://github.com/skuzu7/CSA-LAB/pull/2) and its checks for a reproducible local/CI runner; do not mistake a workflow YAML file for a successful test run.
+4. Check the successful [CI runner PR #2](https://github.com/skuzu7/CSA-LAB/pull/2), [offline policy benchmark PR #3](https://github.com/skuzu7/CSA-LAB/pull/3) and actual [Actions history](https://github.com/skuzu7/CSA-LAB/actions). Review results as self-authored code with executed CI—not as external validation.
 5. Review [freeband-nextjs SECURITY_REVIEW](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), noting both implemented controls and open limitations.
 
 ## Research purpose and intended authorized workflows
@@ -48,8 +49,8 @@ The intended outputs are **defensive artifacts**: a precise finding, a reproduci
 
 ## Next independently verifiable milestones
 
-1. Merge only after the CSA-LAB local/CI runner passes all planted-case and patch-regression checks.
-2. Add machine-readable test reports and a concise failure/limitations matrix.
+1. Continue testing and reviewing the merged CSA-LAB local/CI runner and its 19-case policy benchmark; track newly discovered edge cases as reproducible regressions.
+2. Retain and review machine-readable CI artifacts; build a versioned, human-reviewed evaluation harness that actually invokes an LLM before claiming model security measurements.
 3. Contribute real, scoped fixes to third-party open-source projects via reviewed PRs and follow coordinated disclosure norms.
 4. Publish accepted, non-confidential vulnerability/advisory references **only if** they actually occur and disclosure is permitted.
 5. Maintain a transparent change log and state whether each result is self-tested, CI-tested, maintainer-reviewed or externally accepted.
