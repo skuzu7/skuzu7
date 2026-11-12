@@ -7,6 +7,7 @@ This is an evidence ledger / forward plan, not a claim of professional credentia
 | 1 | Reproducible first-party vulnerability demonstrations and patch regressions | Six planted write-ups, tests, and passing GitHub Actions | **Done — synthetic** |
 | 2 | Reviewable host-policy security evaluation | 19 offline scenarios with documented limits | **Done — synthetic** |
 | 3 | Versioned matched AI-agent action proposal dataset | 24 cases; 14 unit tests; two opposing scripted controls with CI reports; optional explicit provider adapters | **Done — synthetic; no live model run** |
+| 3a | Bounded multi-step agent-security research project | [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab): 16 paired synthetic cases; 26 tests; 8/8 scripted off-scope actions blocked; passing [CI PR #14](https://github.com/skuzu7/CSA-LAB/pull/14) | **Done — synthetic only; no real-model data** |
 | 4 | External open-source defensive contribution | Upstream maintainer reviews and accepts a security-hardening/test PR | **Not yet demonstrated** |
 | 5 | Authorized independently accepted security report | Program acknowledgement and permission to publish a redacted finding | **Not yet demonstrated** |
 | 6 | Live model security evaluation with complete provenance | Verified provider run; model/version; repeated trials; raw classifications; negative controls; honest limits | **Not yet run** |
