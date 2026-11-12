@@ -10,6 +10,7 @@ This document indexes public, inspectable work. It is not a certification, a cla
 
 | Area | Project | Inspectable evidence |
 | --- | --- | --- |
+| Multi-step agent tool-use security research | [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) | 8 matched benign/attack pairs, 26 offline tests, bounded state machine, host-enforced denials, hash-linked trace and [CI PR #14](https://github.com/skuzu7/CSA-LAB/pull/14); scripted controls only, no real-model scores |
 | Vulnerability analysis and remediation | [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | Six local-lab findings, root-cause write-ups, patched variants, security/regression tests |
 | Scope and authorization | [CSA-LAB authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) | Explicit localhost/owned-code boundaries and prohibited actions |
 | Automated defensive testing | [CSA-LAB CI](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml) | Tested vulnerable and patched local fixtures; associated PR workflows completed successfully |
@@ -44,6 +45,10 @@ The [offline tool-boundary evaluation](https://github.com/skuzu7/CSA-LAB/blob/ma
 ## 4. Scoped agent proposal evaluation
 
 The [Scoped Agent Evals harness](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) creates 12 matched benign/attack pairs (24 cases), a strictly separate host-policy gate, and testable proposal-level scoring. [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/RESULTS.md), and [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) document reproducibility and limitations. A separate scripted positive control makes all 12 adversarial proposals and verifies host denial, without invoking a model. The offline baseline is **not** an LLM security score; no live provider benchmark or independently accepted third-party finding is asserted.
+
+### TRACEGUARD: bounded multi-step replay
+
+[TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) independently models the sequence **read untrusted document → propose agent actions → enforce exact trusted host plan → report → finish**. The [methodology](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md), [threat model](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/THREAT_MODEL.md), and [results ledger](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/RESULTS.md) explicitly distinguish 16 synthetic paired cases and 26 offline tests from real-model performance. Its scripted attack positive control receives eight denials across 56 simulated steps; no prohibited operation is executed against a real system.
 
 ## 5. First-party application review
 

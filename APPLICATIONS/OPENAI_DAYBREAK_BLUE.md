@@ -13,6 +13,10 @@ My public [CSA-LAB](https://github.com/skuzu7/CSA-LAB) maintains six intentional
 
 A first-party app, [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs), contains a [STRIDE threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) and a [scoped code review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md). A dependency advisory in Next.js was addressed in a [reviewable CI-verified update](https://github.com/skuzu7/freeband-nextjs/pull/10). This demonstrates defensive remediation rather than an external bug bounty.
 
+## Flagship AI-agent project
+
+[TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) implements a test-backed **multi-step** agent workflow under untrusted retrieved content. Its 16 paired cases and 26 offline tests verify host policy, trace-integrity checks and eight controlled denials from a scripted adversarial strategy, with exact [methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md) and reproducible [GitHub Actions](https://github.com/skuzu7/CSA-LAB/pull/14). It supports optional paid-provider model proposals but contains **no public real GPT/Claude evaluation yet**. I want to apply this research discipline to permitted defensive workflows, while keeping all execution permissions outside model control.
+
 ## Expected use and measurable outputs
 
 - Review defined authorization/session and dependency trust boundaries in owned applications.
