@@ -3,6 +3,8 @@
 **Status:** researcher-authored application statement draft; **not submitted** and **not evidence of approval**.  
 **Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), independent software engineer and defensive security researcher.
 
+> **Eligibility check before submitting (updated 2026-11-13).** Anthropic's expanded programme has three tiers. Individual researchers can apply only for Defense Access, and the published criterion is a track record of reported vulnerabilities; Red Team Access is for organizations. This draft does not yet meet that criterion: no externally accepted report exists (see the last line). Do not submit until at least one accepted report or reviewed upstream security patch can be cited.
+
 ## Concise research statement
 
 I conduct security research on software I own or have explicit permission to test, prioritizing reviewable root-cause analysis and verifiable fixes. My public [CSA-LAB](https://github.com/skuzu7/CSA-LAB) contains six intentionally planted application vulnerabilities, written scope, controlled reproduction, corresponding patches and regression checks run under GitHub Actions. My [19-case offline agent policy benchmark](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) exercises host-side constraints on AI-agent tool permissions. My [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) adds 24 synthetic, matched benign/attack scenarios, a documented methodology, optional model adapters, offline unit tests, and reproducible CI reporting.
@@ -26,6 +28,7 @@ I am requesting individual **Defense Access** to support authorized defensive re
 | --- | --- | --- |
 | Application vulnerability research | [Six documented findings](https://github.com/skuzu7/CSA-LAB/tree/main/writeups) and [test suites](https://github.com/skuzu7/CSA-LAB/tree/main/tests) | Deliberately planted first-party issues |
 | Reproducibility | [CSA-LAB CI](https://github.com/skuzu7/CSA-LAB/actions) | CI is not independent external review |
+| Severity and detection discipline | [Computed CVSS v3.1 and ATT&CK mapping](https://github.com/skuzu7/CSA-LAB/blob/main/docs/classification.md), [six Sigma rules with a replay scorer](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | In-sample check on a 35-request synthetic corpus |
 | Agent authorization | [19-case policy checks](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) | No actual LLM in those checks |
 | Prompt-injection research protocol | [24-case matched eval](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | No live-model benchmark results yet |
 | Real first-party engineering | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Not a commissioned audit |
@@ -36,6 +39,6 @@ I will not scan third-party production systems, access real credentials, automat
 
 ## Remaining applicant-controlled steps
 
-Confirm the current [Anthropic CVP eligibility and security requirements](https://support.claude.com/pt/articles/14604842-programa-de-verificacao-cibernetica), complete the official identity/security flow on the applicant's own account, and supply any private details only through the official program portal. The public text here is an evidence-backed statement, **not** a completed application.
+Confirm the current [Anthropic CVP tiers, eligibility and security requirements](https://support.claude.com/en/articles/14604842) and the [programme announcement](https://anthropic.com/news/cyber-verification-program), complete the official identity/security flow on the applicant's own account, and supply any private details only through the official program portal. The public text here is an evidence-backed statement, **not** a completed application.
 
 **Current maturity:** authentic synthetic proof-of-work with strong reproducibility; independent public-source contribution or accepted external defensive report remains a research goal.
