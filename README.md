@@ -1,41 +1,54 @@
 # Antonio Caetano
 
-**Defensive Application Security · Agentic AI Security Research · Software Engineering · Brazil**
+**Application security · AI-agent security · Software engineering — Brazil**
 
-I build and review software with an evidence-first security workflow: **written scope → threat model → controlled reproduction → root cause → remediation → regression test → reviewable documentation**.
+I test web applications, APIs and AI-agent integrations, and I hand engineering
+teams something they can act on: reproducible findings, computed severity, fixes
+with regression tests, and detection rules for what was found.
 
-[**Security evidence index**](SECURITY_PORTFOLIO.md) · [**Five-minute reviewer guide**](REVIEWER_GUIDE.md) · [**GitHub**](https://github.com/skuzu7) · [**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
+[**Services**](https://github.com/skuzu7/CSA-LAB/blob/main/SERVICES.md) ·
+[**Sample report**](https://github.com/skuzu7/CSA-LAB/blob/main/reports/sample-assessment-report.md) ·
+[**Evidence index**](SECURITY_PORTFOLIO.md) ·
+[**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
 
-## Selected security work
+## What I do
 
-| Project | Inspectable artifacts | What they demonstrate |
+- **Web and API security assessment** — manual testing against the OWASP Top 10 and
+  API Top 10 classes, reported with root cause, proof, CVSS vector and fix.
+- **Fix and retest** — minimal patches plus a regression test per finding that proves
+  the flaw is gone and the feature still works.
+- **Detection rules** — Sigma rules for each confirmed attack, validated against
+  replayed traffic, with false positives and blind spots written down.
+- **AI-agent and LLM application review** — threat model of the agent's tools and
+  data, prompt-injection test cases, and a host-side authorization gate design.
+
+Every engagement starts with signed
+[rules of engagement](https://github.com/skuzu7/CSA-LAB/blob/main/engagement/rules-of-engagement.md).
+No written authorization from the system owner, no testing.
+
+## Evidence you can run
+
+| Work | What it shows | Numbers asserted in CI |
 | --- | --- | --- |
-| [**TRACEGUARD — Agent Replay Lab**](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) | [26 offline tests](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/tests/test_replay.py), [16 paired scenarios](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/scenarios.jsonl), [host-side enforcement](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/core.py), [methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md), [CI reports](https://github.com/skuzu7/CSA-LAB/actions) | Flagship **multi-step** synthetic AI-agent trust-boundary lab: untrusted tool observations, 8 blocked off-scope requests in scripted control, hash-chained traces; **not** a real-model robustness score |
-| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | [Six local case studies](https://github.com/skuzu7/CSA-LAB/tree/main/writeups), [authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md), [vulnerable tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/security/test_findings_vulnerable.py), [regression tests](https://github.com/skuzu7/CSA-LAB/blob/main/tests/regression/test_fixes.py) | Intentionally planted IDOR, SQLi, path traversal, session forgery, business-logic flaw and SSRF; controlled validation and patch checks |
-| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | [STRIDE threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [CI workflow](https://github.com/skuzu7/freeband-nextjs/blob/main/.github/workflows/ci.yml), [critical advisory remediation](https://github.com/skuzu7/freeband-nextjs/pull/10), [case-study PR](https://github.com/skuzu7/freeband-nextjs/pull/19) | First-party authentication/session hardening, secure code review, test coverage and documented residual risks |
-| [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | [24 matched benign/attack scenarios](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/cases.jsonl), [14 unit tests](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/test_evaluate.py), [methodology](https://github.com/skuzu7/CSA-LAB/blob/main/agent_evals/METHODS.md), [GitHub Actions](https://github.com/skuzu7/CSA-LAB/actions) | Offline, reproducible host-policy evaluation with **optional** live OpenAI/Anthropic model adapters. No real-model results claimed. |
-| [Agent tool-boundary benchmark](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) | [Offline policy harness](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/offline_benchmark.py), [methodology and limitations](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md), [CI artifacts](https://github.com/skuzu7/CSA-LAB/actions) | 19 synthetic, reproducible allow/deny checks for host-approved agent tools; **not** a live LLM prompt-injection benchmark |
+| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) — full assessment cycle | Six vulnerabilities taken from authorization to report: exploit, classify, detect, fix, retest | 6 / 6 exploits reproduce · 6 / 6 fixes pass · CVSS v3.1 computed from vectors (6.5 – 8.6) |
+| [Detection engineering](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | One Sigma rule per finding, replayed against real requests on the vulnerable and patched builds | 13 / 13 attack requests alerted · 0 / 22 benign alerted · rules parse in pySigma |
+| [Adversary emulation plan](https://github.com/skuzu7/CSA-LAB/blob/main/docs/adversary-emulation-plan.md) | Six-step intrusion chain mapped to MITRE ATT&CK with procedure, telemetry, detection and control per step | Every cell backed by a test |
+| [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) — AI-agent tool-use security | Multi-step replay where the host, not the model, authorizes each tool action; hash-chained traces | 16 paired cases · 26 tests · 8 / 8 scripted off-scope requests denied |
+| [Scoped agent evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) and [tool-boundary benchmark](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) | Prompt-injection proposal scoring and policy-gate checks, offline and deterministic | 24 cases · 14 tests · 19 / 19 policy decisions |
+| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) — hardening a real application | [STRIDE threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [Next.js advisory remediation](https://github.com/skuzu7/freeband-nextjs/pull/10) | CI-verified dependency fix |
 
-**Reproducibility:** [CSA-LAB CI runner](https://github.com/skuzu7/CSA-LAB/pull/2), [19-case host policy benchmark](https://github.com/skuzu7/CSA-LAB/pull/3), and the [24-case scoped evaluation PR](https://github.com/skuzu7/CSA-LAB/pull/11) are merged; their GitHub Actions checks passed. These are **synthetic first-party exercises**, not third-party vulnerability findings. A scripted [adversarial positive control](https://github.com/skuzu7/CSA-LAB/pull/12) verifies that the host blocks all 12 attack-goal proposals; it is **not** a live model test. The [TRACEGUARD research PR #14](https://github.com/skuzu7/CSA-LAB/pull/14) is also merged with passing GitHub Actions; its **26 offline tests, 16 synthetic cases and 8 scripted host denials** are reproducible. The optional live model research has **not** yet been run.
-
-## Security research focus
-
-- Application-security triage, authorization and session-boundary reviews.
-- Defensive vulnerability reproduction and patch verification on owned/local fixtures.
-- Threat modeling, multi-step agent tool-trust boundaries and test design for first-party systems.
-- Human-reviewed, auditable AI assistance in security engineering.
-
-**Research boundaries:** No unsanctioned scanning, exploitation of third-party systems or access to real credentials/data. The CSA-LAB exercises are deliberately constructed and are **not** external pentest findings, CVEs, paid bounties or professional certifications. I make no claim of privileged-access-program approval. See the [evidence and limitations guide](REVIEWER_GUIDE.md).
-
-## Independent review and research direction
-
-[Five-minute reviewer guide](REVIEWER_GUIDE.md) · [Evidence index](SECURITY_PORTFOLIO.md) · [Research milestones](RESEARCH_MILESTONES.md)
-
-I maintain application-specific defensive research statements for [Anthropic CVP Defense Access](APPLICATIONS/ANTHROPIC_CVP_DEFENSE_ACCESS.md) and [OpenAI Daybreak Blue](APPLICATIONS/OPENAI_DAYBREAK_BLUE.md). These are **draft research statements, not submitted applications or evidence of program approval**.
+**Scope of these claims.** This is lab and first-party work on my own code with
+synthetic data. The AI-agent figures come from scripted controls, not from a live
+model. I do not claim a CVE, a bug-bounty award, a client engagement, a
+certification or membership of any vendor access programme. The
+[reviewer guide](REVIEWER_GUIDE.md) maps each claim to what you can inspect, and
+[milestones](RESEARCH_MILESTONES.md) lists what is not yet demonstrated.
 
 ## Other engineering work
 
-[TranslatePDF](https://github.com/skuzu7/TranslatePDF) — layout-aware PDF translation · [Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project) — commerce engineering · [Portfolio](https://github.com/skuzu7/Portfolio) — web portfolio · [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) — browser QA automation for authorized environments
+[TranslatePDF](https://github.com/skuzu7/TranslatePDF) — layout-aware PDF translation ·
+[Shopping-Cart-Project](https://github.com/skuzu7/Shopping-Cart-Project) — commerce engineering ·
+[Portfolio](https://github.com/skuzu7/Portfolio) — web portfolio
 
 **Tech:** Python · TypeScript · Next.js · Rust · SQL · Docker · GitHub Actions
 

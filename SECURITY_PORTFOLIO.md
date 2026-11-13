@@ -2,7 +2,7 @@
 
 **Maintainer:** Antonio Caetano (@skuzu7)  
 **Focus:** application security, threat modeling, remediation, and regression testing in owned or explicitly authorized environments.  
-**Updated:** 2026-11-11
+**Updated:** 2026-11-13
 
 This document indexes public, inspectable work. It is not a certification, a claim of professional penetration-testing engagements, or evidence of CVEs/bug bounties. Claims below are limited to the documented repository contents. Test instructions are provided for independent reproduction; the linked GitHub Actions runs for the CI fix and the offline agent-policy benchmark both completed successfully, but no external review or certification is claimed.
 
@@ -12,14 +12,17 @@ This document indexes public, inspectable work. It is not a certification, a cla
 | --- | --- | --- |
 | Multi-step agent tool-use security research | [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) | 8 matched benign/attack pairs, 26 offline tests, bounded state machine, host-enforced denials, hash-linked trace and [CI PR #14](https://github.com/skuzu7/CSA-LAB/pull/14); scripted controls only, no real-model scores |
 | Vulnerability analysis and remediation | [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | Six local-lab findings, root-cause write-ups, patched variants, security/regression tests |
+| Classification and severity | [Finding classification](https://github.com/skuzu7/CSA-LAB/blob/main/docs/classification.md) | CWE, OWASP Top 10:2025 / API Top 10 2023, MITRE ATT&CK and CVSS v3.1 per finding; scores computed from vectors by a [tested calculator](https://github.com/skuzu7/CSA-LAB/blob/main/classification/cvss31.py), page generated and checked in CI |
+| Detection engineering | [Sigma rules and replay](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | One rule per finding; 35 labelled requests replayed on the vulnerable and patched builds: 13/13 attack requests alerted, 0/22 benign alerted; rules parse in pySigma. In-sample check on a small corpus, not a production efficacy estimate |
+| Threat-informed testing | [Adversary emulation plan](https://github.com/skuzu7/CSA-LAB/blob/main/docs/adversary-emulation-plan.md) | Six-step ATT&CK-mapped intrusion chain with procedure, telemetry, detection and control per step; no named group, no post-exploitation |
+| Reporting and engagement practice | [Sample report](https://github.com/skuzu7/CSA-LAB/blob/main/reports/sample-assessment-report.md), [engagement kit](https://github.com/skuzu7/CSA-LAB/tree/main/engagement) | Client-format report with retest results; scoping questionnaire, rules of engagement, operating standard. Samples and templates, not records of a paid engagement |
 | Scope and authorization | [CSA-LAB authorization](https://github.com/skuzu7/CSA-LAB/blob/main/AUTHORIZATION.md) | Explicit localhost/owned-code boundaries and prohibited actions |
 | Automated defensive testing | [CSA-LAB CI](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml) | Tested vulnerable and patched local fixtures; associated PR workflows completed successfully |
 | Threat modeling | [freeband-nextjs STRIDE model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) | Assets, trust boundaries, threats, mitigations, and test references for authentication |
 | Secure code review | [freeband-nextjs security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Scoped review of first-party authentication/session code, evidence and limitations |
 | Remediation engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Signed sessions, login throttling, tests and [CI-verified Next.js security advisory remediation](https://github.com/skuzu7/freeband-nextjs/pull/10); [detailed evidence PR](https://github.com/skuzu7/freeband-nextjs/pull/19). This is first-party patching, not external CVE discovery |
-| Controlled QA automation | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | MCP/browser tooling for authorized QA, accessibility and agent evaluation |
 | Agent tool-boundary policy testing | [Offline benchmark](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) | 19 synthetic allow/deny decisions: host-approved plans, sensitive paths, explicit write approval, untrusted tool results; no LLM used |
-| Paired prompt-injection evaluation methodology | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 matched scenarios (12 benign/attack pairs), 13 offline unit tests, JSON scoring and optional user-initiated real-provider calls; none made yet |
+| Paired prompt-injection evaluation methodology | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 matched scenarios (12 benign/attack pairs), 14 offline unit tests, JSON scoring and optional user-initiated real-provider calls; none made yet |
 
 ## 2. Reproducible local case studies
 
@@ -34,7 +37,7 @@ The six CSA-LAB cases use intentionally vulnerable software, synthetic fixtures 
 | 005 | Negative-amount business-logic flaw | [Root cause, reproduction, fix and regression](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-005.md) |
 | 006 | Server-side request forgery (SSRF) | [Root cause, reproduction, fix and regression](https://github.com/skuzu7/CSA-LAB/blob/main/writeups/finding-006.md) |
 
-**To reproduce in your own local clone:** follow the [CSA-LAB README](https://github.com/skuzu7/CSA-LAB#reproduce-all-six-cases-windows-macos-or-linux) and its [CI workflow](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml). The vulnerable variant is intentionally insecure; never publish its service on a network.
+**To reproduce in your own local clone:** follow the [CSA-LAB README](https://github.com/skuzu7/CSA-LAB#reproduce-everything) and its [CI workflow](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml). The vulnerable variant is intentionally insecure; never publish its service on a network.
 
 The defensive workflow is: **document scope → model the threat → reproduce in a local fixture → identify root cause → patch → write a regression test → record limitations**.
 
@@ -69,8 +72,8 @@ In [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs):
 
 ## 7. Research direction
 
-Further reproducible, defensive work on first-party systems: vulnerability triage, secure-code review, detection engineering, patch verification, and concise write-ups that record evidence as well as uncertainty. Any future external security work will require explicit authorization and an updated scope.
+The lab now covers the full cycle on first-party code. What it cannot supply is external validation, so the next work is outward-facing: accepted reports through authorized programmes, reviewed security patches to open-source projects, and client assessments under signed rules of engagement. Any external security work requires explicit authorization and an updated scope.
 
-**Research roadmap:** [Evidence-based milestones](RESEARCH_MILESTONES.md) · [CVP Defense Access statement](APPLICATIONS/ANTHROPIC_CVP_DEFENSE_ACCESS.md) · [Daybreak Blue statement](APPLICATIONS/OPENAI_DAYBREAK_BLUE.md).
+**Research roadmap:** [Evidence-based milestones](RESEARCH_MILESTONES.md).
 
 **Contact:** [LinkedIn](https://br.linkedin.com/in/antonioccjr) · [GitHub](https://github.com/skuzu7).
