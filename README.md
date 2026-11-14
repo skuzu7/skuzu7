@@ -9,6 +9,7 @@ with regression tests, and detection rules for what was found.
 [**Services**](https://github.com/skuzu7/CSA-LAB/blob/main/SERVICES.md) ·
 [**Sample report**](https://github.com/skuzu7/CSA-LAB/blob/main/reports/sample-assessment-report.md) ·
 [**Evidence index**](SECURITY_PORTFOLIO.md) ·
+[**Research access applications**](APPLICATIONS/README.md) ·
 [**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
 
 ## What I do
