@@ -1,7 +1,9 @@
 # OpenAI Daybreak Blue — Individual Defensive Research Statement
 
 **Status:** researcher-authored application draft; **not submitted** and **not an approval claim**.  
-**Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), Brazil.
+**Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), Brazil.  
+**Institutional affiliation:** none (applicant-reported).  
+**Academic publications:** none (applicant-reported).
 
 ## Proposed defensive use case
 
@@ -31,7 +33,7 @@ All testing must target owned systems or explicitly authorized programs. Never i
 
 ## Application and verification checklist
 
-The applicant must personally complete the current [Daybreak Blue individual eligibility flow](https://chatgpt.com/cyber), including an eligible paid plan, Advanced Account Security, qualifying physical FIDO2 hardware key, the required additional secure sign-in method, and any identity or trust verification requested. A public GitHub repository cannot establish these account-level requirements or guarantee approval. Do not share recovery codes or identity information in issues, PRs or GitHub.
+The applicant must personally complete the current [Daybreak Blue individual eligibility flow](https://chatgpt.com/cyber). The official Help Center currently specifies: age 18 or older; an eligible paid plan; Advanced Account Security; at least two secure sign-in methods, including one that works across devices; at least one compatible physical FIDO2 hardware security key (a software or synced passkey alone does not satisfy this requirement); saved recovery keys; identity verification; and the separate Daybreak key setup. Regional availability and approval are not guaranteed. A public GitHub repository cannot establish any of these account-level requirements. Verify the live checklist at [OpenAI Daybreak — Trusted Access for Cyber](https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview) and [Troubleshooting](https://help.openai.com/en/articles/20001259-troubleshooting-openai-daybreak). Do not share recovery codes, identity documents, hardware-key secrets, or account-security details in issues, PRs or GitHub.
 
 ## Honest standing
 
