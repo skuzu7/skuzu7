@@ -2,7 +2,7 @@
 
 **Maintainer:** Antonio Caetano (@skuzu7)  
 **Focus:** application security, threat modeling, remediation, and regression testing in owned or explicitly authorized environments.  
-**Updated:** 2026-11-13
+**Updated:** 2026-11-14
 
 This document indexes public, inspectable work. It is not a certification, a claim of professional penetration-testing engagements, or evidence of CVEs/bug bounties. Claims below are limited to the documented repository contents. Test instructions are provided for independent reproduction; the linked GitHub Actions runs for the CI fix and the offline agent-policy benchmark both completed successfully, but no external review or certification is claimed.
 
@@ -21,6 +21,7 @@ This document indexes public, inspectable work. It is not a certification, a cla
 | Threat modeling | [freeband-nextjs STRIDE model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) | Assets, trust boundaries, threats, mitigations, and test references for authentication |
 | Secure code review | [freeband-nextjs security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Scoped review of first-party authentication/session code, evidence and limitations |
 | Remediation engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Signed sessions, login throttling, tests and [CI-verified Next.js security advisory remediation](https://github.com/skuzu7/freeband-nextjs/pull/10); [detailed evidence PR](https://github.com/skuzu7/freeband-nextjs/pull/19). This is first-party patching, not external CVE discovery |
+| Browser/MCP data-boundary hardening | [CSA-Obsidian PR #4](https://github.com/skuzu7/CSA-Obsidian/pull/4) | Service-specific token capture removed; request headers allowlisted/redacted; URL paths and query strings omitted from captured records; MCP cookie values redacted; session names validated and POSIX session files restricted to 0600. CI passed. Open draft PR; not independently audited |
 | Agent tool-boundary policy testing | [Offline benchmark](https://github.com/skuzu7/CSA-LAB/blob/main/agent_security/README.md) | 19 synthetic allow/deny decisions: host-approved plans, sensitive paths, explicit write approval, untrusted tool results; no LLM used |
 | Paired prompt-injection evaluation methodology | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 matched scenarios (12 benign/attack pairs), 14 offline unit tests, JSON scoring and optional user-initiated real-provider calls; none made yet |
 
