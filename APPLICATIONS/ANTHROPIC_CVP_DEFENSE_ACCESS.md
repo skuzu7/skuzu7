@@ -34,7 +34,7 @@ I am requesting individual **Defense Access** to support authorized defensive re
 | Agent authorization | [19-case policy checks](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) | No actual LLM in those checks |
 | Prompt-injection research protocol | [24-case matched eval](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | No live-model benchmark results yet |
 | Real first-party engineering | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [performance PR #23 merged](https://github.com/skuzu7/freeband-nextjs/pull/23) | Not a commissioned audit |
-| Browser/MCP boundary hardening | [CSA-Obsidian PR #4 merged](https://github.com/skuzu7/CSA-Obsidian/pull/4) | A further host allowlist/Windows ACL PR #5 is under CI; neither is an independent audit |
+| Browser/MCP boundary hardening | [CSA-Obsidian PR #4 merged](https://github.com/skuzu7/CSA-Obsidian/pull/4) | [host allowlist/Windows ACL PR #5 is merged with Linux and Windows CI passing](https://github.com/skuzu7/CSA-Obsidian/pull/5); neither PR is an independent audit |
 
 ## Individual Defense Access security requirements
 
