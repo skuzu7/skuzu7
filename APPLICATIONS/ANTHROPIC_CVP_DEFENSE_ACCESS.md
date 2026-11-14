@@ -1,9 +1,11 @@
 # Anthropic Cyber Verification Program — Defense Access
 
 **Status:** researcher-authored application statement draft; **not submitted** and **not evidence of approval**.  
-**Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), independent software engineer and defensive security researcher.
+**Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), independent software engineer and defensive security researcher.  
+**Institutional affiliation:** none (applicant-reported).  
+**Academic publications:** none (applicant-reported).
 
-> **Eligibility check before submitting (updated 2026-11-13).** Anthropic's expanded programme has three tiers. Individual researchers can apply only for Defense Access, and the published criterion is a track record of reported vulnerabilities; Red Team Access is for organizations. This draft does not yet meet that criterion: no externally accepted report exists (see the last line). Do not submit until at least one accepted report or reviewed upstream security patch can be cited.
+> **Eligibility check before submitting (official sources checked 2026-11-14).** Anthropic's Help Center says independent researchers apply as individuals and that individual applicants can receive Defense Access only; Red Team Access and Specialized Access are organization-only. The 6 October 2026 programme announcement lists individual researchers with a track record of reported vulnerabilities among examples of qualifying Defense Access applicants. That announcement is a strong evidence signal, not an explicit universal checklist item in the Help Center. This public portfolio currently documents no independently accepted vulnerability report, so do not claim that eligibility has been established. Keep this draft on hold until the official portal's current requirements are checked and the applicant can supply relevant independently verifiable disclosure evidence. Sources: [CVP Help Center](https://support.claude.com/en/articles/14604842-cyber-verification-program) · [programme announcement](https://www.anthropic.com/news/cyber-verification-program).
 
 ## Concise research statement
 
