@@ -7,7 +7,7 @@
 **Status:** preparation only — neither application below is submitted, approved, or endorsed by the provider.  
 **Official requirements checked:** 2026-11-14.
 
-This index is a navigation and readiness document. It does not claim eligibility, certification, program membership, accepted vulnerability reports, client engagements, or independent validation.
+This index is a navigation and readiness document. It does not claim eligibility, certification, program membership, accepted vulnerability reports, client engagements, or independent validation. See the [execution report](../AUDIT/2026-11-14-execution-report.md) for the repository changes and verification status.
 
 ## Application drafts
 
