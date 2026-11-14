@@ -2,7 +2,7 @@
 
 **Prepared:** 2026-11-14  
 **Account/repositories reviewed:** `skuzu7` public profile and selected first-party projects  
-**Disposition:** four technical PRs merged; one follow-up performance PR is under CI; the provider application pack remains draft; no provider application submitted.
+**Disposition:** all five technical PRs are merged; the provider application pack remains draft; no provider application submitted.
 
 ## Pull requests and verification
 
@@ -30,7 +30,7 @@
 ### Freeband
 - Merged PR #23: removed the unused `tailwind-merge` runtime dependency and corrected CLS measurement to use session windows.
 - Full CI passed: 15-page visual smoke, reduced-motion smoke, and five-route performance budget. Shared JavaScript measured 622 KB on `/`, 654 KB on `/palco`, `/arquivo`, and `/historia`; CLS was 0 on those routes and 0.0007 on `/portfolio`. LCP ranged from 160–348 ms.
-- Follow-up PR #24 defers the PDF renderer and seven-page portfolio document graph until the user clicks Download, aiming to remove the prior 1,901 KB initial JS and 565 ms post-load task from the initial route. Do not mark this optimization complete until PR #24's CI measurements pass.
+- Merged PR #24 defers the PDF renderer and seven-page portfolio document graph until the user clicks Download. Initial portfolio JavaScript fell from 1,901 KB to 624 KB (1,277 KB / 67.2% reduction), the longest observed task fell from 565 ms to 0 ms, LCP measured 184 ms, and CLS measured 0.0007. All five routes passed the 680 KB JavaScript / 250 ms long-task budgets.
 
 ## Program eligibility and evidence limits
 
@@ -51,4 +51,4 @@
 
 ## Submission and merge policy
 
-All technical changes described above were pushed through pull requests. PRs #20, #4, #5 and #23 are merged. PR #24 remains subject to complete CI. PR #11 remains draft pending applicant fact review. No provider application was submitted, and no organization or account-security facts were fabricated.
+All technical changes described above were pushed through pull requests. PRs #20, #4, #5, #23 and #24 are merged; all associated required CI checks passed. PR #11 remains draft pending applicant fact review. No provider application was submitted, and no organization or account-security facts were fabricated.
