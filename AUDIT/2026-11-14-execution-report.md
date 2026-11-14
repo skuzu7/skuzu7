@@ -2,7 +2,7 @@
 
 **Prepared:** 2026-11-14  
 **Account/repositories reviewed:** `skuzu7` public profile and selected first-party projects  
-**Disposition:** changes pushed to review branches; no pull request merged and no provider application submitted.
+**Disposition:** changes pushed to review branches; all code PRs with full CI (#4, #20, #23) are ready for review; no pull request merged and no provider application submitted.
 
 ## Pull requests and verification
 
@@ -11,7 +11,7 @@
 | [skuzu7/skuzu7](https://github.com/skuzu7/skuzu7/pull/11) | #11 | Anthropic CVP / OpenAI Daybreak preparation pack; portfolio and reviewer guide updates | Open, draft; mergeable. Applicant fact checks still required. |
 | [CSA-LAB](https://github.com/skuzu7/CSA-LAB/pull/20) | #20 | Reconcile authorization scope with offline AI-agent research surfaces | Open, ready for review; Local Security Evidence and CodeQL passed. |
 | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian/pull/4) | #4 | Remove service-specific token capture and harden browser/MCP data handling | Open, ready for review; Ruff, formatter, and unit tests passed. |
-| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs/pull/23) | #23 | Reduce shared JavaScript bundle and correct CLS measurement | Open, ready for review; unit/security tests, lint, typecheck, and production build passed. Visual smoke/performance CI was still running at report preparation. |
+| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs/pull/23) | #23 | Reduce shared JavaScript bundle and correct CLS measurement | Open, ready for review; full GitHub Actions workflow passed, including visual smoke, reduced-motion, and performance budget. |
 
 ## Changes delivered
 
@@ -33,7 +33,7 @@
 ### Freeband
 - Removed the `tailwind-merge` runtime dependency from the client class helper and lockfile.
 - Updated performance testing to compute CLS using session windows and report layout-shift source details when a budget is exceeded.
-- Do not treat the performance fix as complete until the current visual smoke and performance workflow passes.
+- Full CI passed: 15-page visual smoke, reduced-motion smoke, and five-route performance budget. Shared JavaScript measured 622 KB on `/`, 654 KB on `/palco`, `/arquivo`, and `/historia`; CLS was 0 on those routes and 0.0007 on `/portfolio`. LCP ranged from 160–348 ms. A 565 ms post-load task on `/portfolio` was a non-blocking note (500 ms threshold), not a failed budget.
 
 ### Application pack
 - Checked official Anthropic CVP and OpenAI Daybreak documentation on 2026-11-14.
