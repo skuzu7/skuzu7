@@ -30,7 +30,7 @@ This index is a navigation and readiness document. It does not claim eligibility
 | Agent action-proposal evaluation | [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 synthetic cases and 14 offline tests. No live provider evaluation has been recorded. |
 | Host-side tool authorization | [Agent security benchmark](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) | 19 deterministic synthetic policy decisions; no LLM is involved in this benchmark. |
 | Detection engineering | [Sigma detections](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | Six rules replayed against a small labelled synthetic corpus; in-sample results are not production detection efficacy. |
-| First-party secure engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Threat model, scoped security review, tests, and a first-party dependency remediation. Not a commissioned external audit. |
+| First-party secure engineering | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | Threat model, scoped security review, tests, first-party dependency remediation, and [bundle/CLS performance PR #23](https://github.com/skuzu7/freeband-nextjs/pull/23) with full CI passing. Not a commissioned external audit. |
 | Browser/MCP data-boundary hardening | [CSA-Obsidian PR #4](https://github.com/skuzu7/CSA-Obsidian/pull/4) | Removed service-specific token capture; allowlisted/redacted request metadata; origin-only URL capture; redacted MCP cookie values; session path validation and POSIX 0600. CI passed. Open draft PR; not an independent audit. |
 
 For claim-by-claim evidence and reproduction instructions, see [SECURITY_PORTFOLIO.md](../SECURITY_PORTFOLIO.md) and [REVIEWER_GUIDE.md](../REVIEWER_GUIDE.md).
