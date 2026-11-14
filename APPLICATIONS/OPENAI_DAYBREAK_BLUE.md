@@ -45,7 +45,7 @@ The official [Daybreak overview](https://help.openai.com/en/articles/20001258-op
 6. Return to the official Daybreak setup flow, finish identity verification, and complete the separate Daybreak key setup.
 7. Check the account's live status. Completing setup does not guarantee approval.
 
-Do not send recovery keys, identity documents, hardware-key secrets, or account-security details to ChatGPT, GitHub, or another person. Complete all account steps yourself at [chatgpt.com/cyber](https://chatgpt.com/cyber).
+Brazil appears in OpenAI's current [supported-country list](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries). That supports regional availability for ChatGPT, but Advanced Account Security is still limited to eligible personal accounts; it may not appear for enterprise-managed or otherwise ineligible accounts. Check Settings → Security and the live Daybreak checklist.\n\nDo not send recovery keys, identity documents, hardware-key secrets, or account-security details to ChatGPT, GitHub, or another person. Complete all account steps yourself at [chatgpt.com/cyber](https://chatgpt.com/cyber).
 
 ## Why Daybreak Red is not the current application path
 
