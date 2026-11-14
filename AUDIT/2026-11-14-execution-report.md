@@ -2,7 +2,7 @@
 
 **Prepared:** 2026-11-14  
 **Account/repositories reviewed:** `skuzu7` public profile and selected first-party projects  
-**Disposition:** three technical PRs merged; two follow-up hardening/performance PRs are under CI; the provider application pack remains draft; no provider application submitted.
+**Disposition:** four technical PRs merged; one follow-up performance PR is under CI; the provider application pack remains draft; no provider application submitted.
 
 ## Pull requests and verification
 
@@ -23,7 +23,7 @@
 
 ### CSA-Obsidian
 - Merged PR #4: removed Binance-specific token capture; redacted sensitive and unknown request-header values; reduced captured URLs to scheme and host; redacted MCP cookie values; validated session paths; protected POSIX session writes.
-- Follow-up PR #5 adds a fail-closed context-wide HTTP(S) host allowlist with exact hosts, optional wildcard subdomains and explicit non-standard ports. Empty/unset configuration denies network requests. Firefox service workers are disabled to keep Playwright request routing effective.
+- Merged PR #5 adds a fail-closed context-wide HTTP(S) host allowlist with exact hosts, optional wildcard subdomains and explicit non-standard ports. Empty/unset configuration denies network requests. Firefox service workers are disabled to keep Playwright request routing effective. Linux and Windows CI passed, including actual Windows ACL integration checks.
 - PR #5 also adds private POSIX 0700/0600 modes and Windows ACL handling for profile/session directories, session JSON, Chrome cache/export files and temporary Chrome cookie database copies. It uses private same-volume staging before writing sensitive JSON.
 - Residual limit: this is a browser host policy, not an OS sandbox or IP-level egress firewall. It does not pin DNS answers or prevent an allowlisted hostname from resolving to a private IP. Direct Python APIs and arbitrary page JavaScript remain privileged.
 
@@ -51,4 +51,4 @@
 
 ## Submission and merge policy
 
-All technical changes described above were pushed through pull requests. PRs #20, #4 and #23 are merged. PR #5 and #24 remain subject to complete CI. PR #11 remains draft pending applicant fact review. No provider application was submitted, and no organization or account-security facts were fabricated.
+All technical changes described above were pushed through pull requests. PRs #20, #4, #5 and #23 are merged. PR #24 remains subject to complete CI. PR #11 remains draft pending applicant fact review. No provider application was submitted, and no organization or account-security facts were fabricated.
