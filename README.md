@@ -20,9 +20,7 @@ CI results, test methodology and known limitations. The
 separates real technical evidence from enterprise controls, legal
 authorizations and third-party recognition **not yet achieved**.
 
-**No government affiliation, critical-infrastructure authorization, external
-security accreditation, professional certification or Anthropic CVP approval is
-claimed.** Evidence-first documentation is not itself regulatory compliance.
+
 
 ## What I do
 
