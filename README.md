@@ -11,6 +11,19 @@ with regression tests, and detection rules for what was found.
 [**Evidence index**](SECURITY_PORTFOLIO.md) ·
 [**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
 
+## Institutional-grade research discipline (work in progress)
+
+I maintain an [independent-review portfolio](INSTITUTIONAL_PORTFOLIO.md) and a
+[reviewer guide](REVIEWER_GUIDE.md) linking security claims to inspectable code,
+CI results, test methodology and known limitations. The
+[organizational-readiness plan](APPLICATIONS/ORGANIZATIONAL_CVP_READINESS.md)
+separates real technical evidence from enterprise controls, legal
+authorizations and third-party recognition **not yet achieved**.
+
+**No government affiliation, critical-infrastructure authorization, external
+security accreditation, professional certification or Anthropic CVP approval is
+claimed.** Evidence-first documentation is not itself regulatory compliance.
+
 ## What I do
 
 - **Web and API security assessment** — manual testing against the OWASP Top 10 and
