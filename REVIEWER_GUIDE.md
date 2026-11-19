@@ -22,6 +22,10 @@ This document maps each claim to material a reviewer can inspect without trustin
 | Production-oriented secure engineering | [freeband-nextjs STRIDE model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md) and [security review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | Auth/session trust boundaries, tests, findings, mitigations and known weaknesses | Scoped first-party review; not a commissioned or external audit |
 | Dependency advisory remediation | [Next.js correction PR](https://github.com/skuzu7/freeband-nextjs/pull/10) and [case-study PR](https://github.com/skuzu7/freeband-nextjs/pull/19) | A critical advisory detected in CI, patched dependency+lockfile and passing full validation | Does not prove a successful exploit or that the production deployment updated |
 
+## Organizational CVP tier boundary
+
+This public dossier is **technical evidence**, not proof of organizational eligibility for Anthropic CVP Red Team Access. A legitimate applicant must satisfy one of the published organization pathways and the binding security controls. The [CVP Red Team evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md) makes the missing organizational proofs explicit. Individual Defense grant status is verified through the provider portal, not inferred from this repository.
+
 ## Five-minute verification path
 
 1. Inspect [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab), its [measurements](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md), and [successful CI checks](https://github.com/skuzu7/CSA-LAB/pull/14). The eight denied actions are produced by a scripted control, not a real LLM test.
