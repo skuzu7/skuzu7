@@ -1,17 +1,17 @@
 # Anthropic Cyber Verification Program — Defense Access
 
-**Status:** researcher-authored application statement draft; **not submitted** and **not evidence of approval**.  
+**Status:** historical researcher-authored Defense Access statement, originally prepared in November 2026. **Not an official portal-status record or proof of a current grant.**  
 **Applicant:** Antonio Caetano ([@skuzu7](https://github.com/skuzu7)), independent software engineer and defensive security researcher.
 
-> **Eligibility check before submitting (updated 2026-11-13).** Anthropic's expanded programme has three tiers. Individual researchers can apply only for Defense Access, and the published criterion is a track record of reported vulnerabilities; Red Team Access is for organizations. This draft does not yet meet that criterion: no externally accepted report exists (see the last line). Do not submit until at least one accepted report or reviewed upstream security patch can be cited.
+> **Tier clarification (reviewed 2026-11-19).** Individuals may apply to **Defense Access**; **Red Team Access requires an organization** and a qualifying route. External security work can strengthen credibility but is not a reason to assert that this draft was rejected or that an account lacks Defense Access. Grant status is visible only in the official portal. [Current CVP requirements](https://support.claude.com/en/articles/14604842-cyber-verification-program) and [organizational evidence matrix](CVP_RED_TEAM_EVIDENCE_MATRIX.md).
 
 ## Concise research statement
 
 I conduct security research on software I own or have explicit permission to test, prioritizing reviewable root-cause analysis and verifiable fixes. My public [CSA-LAB](https://github.com/skuzu7/CSA-LAB) contains six intentionally planted application vulnerabilities, written scope, controlled reproduction, corresponding patches and regression checks run under GitHub Actions. My [19-case offline agent policy benchmark](https://github.com/skuzu7/CSA-LAB/tree/main/agent_security) exercises host-side constraints on AI-agent tool permissions. My [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) adds 24 synthetic, matched benign/attack scenarios, a documented methodology, optional model adapters, offline unit tests, and reproducible CI reporting.
 
-My primary next-step research project is [TRACEGUARD — Agent Replay Lab](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab), a bounded multi-step AI-agent tool security experiment. It provides 16 matched synthetic benign/attack cases, 26 offline tests, a separate host-side authorization layer, tamper-evident (non-authenticated) hash-linked traces, and a CI-verifiable positive control that denies eight deliberately proposed out-of-scope actions. This demonstrates a reproducible **research harness**, not real Claude model robustness, and motivates a responsible, permissioned future evaluation with real models.
+My ongoing research project is [TRACEGUARD — Agent Replay Lab](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab), a bounded multi-step AI-agent tool security experiment. It provides 16 matched synthetic benign/attack cases, 26 offline tests, a separate host-side authorization layer, tamper-evident (non-authenticated) hash-linked traces, and a CI-verifiable positive control that denies eight deliberately proposed out-of-scope actions. This demonstrates a reproducible **research harness**, not real Claude model robustness, and motivates a responsible, permissioned future evaluation with real models.
 
-I am requesting individual **Defense Access** to support authorized defensive review, vulnerability triage, verification of remediation, and AI-assisted evaluation of agent trust boundaries. I intend to produce **public, reproducible defensive artifacts**: minimal root-cause demonstrations, unit/regression tests, scoped threat models, reviews of generated patches, and redacted research notes. I will not use access as a substitute for authorization.
+This historical statement explains a legitimate individual **Defense Access** use case: authorized defensive review, vulnerability triage, verification of remediation, and AI-assisted evaluation of agent trust boundaries. I intend to produce **public, reproducible defensive artifacts**: minimal root-cause demonstrations, unit/regression tests, scoped threat models, reviews of generated patches, and redacted research notes. I will not use access as a substitute for authorization.
 
 ## Exact planned workflow
 
@@ -35,10 +35,10 @@ I am requesting individual **Defense Access** to support authorized defensive re
 
 ## Responsible use and transparency
 
-I will not scan third-party production systems, access real credentials, automate unauthorized exploitation, or repurpose restricted research access for third-party customers. I will keep model-generated proposals separate from the host's authorization decision and require human review before sensitive actions. I do **not** claim accepted external bounties, CVEs, professional penetration-testing credentials, institutional affiliation, special-program membership, or independent validation that is not actually documented.
+I will not scan third-party production systems, access real credentials, automate unauthorized exploitation, or repurpose restricted research access for third-party customers. I will keep model-generated proposals separate from the host's authorization decision and require human review before sensitive actions. I do **not** claim accepted external bounties, CVEs, professional penetration-testing credentials, institutional affiliation, an organizational Red Team grant, or independent validation that is not actually documented. This public draft does not independently verify individual portal status.
 
 ## Remaining applicant-controlled steps
 
-Confirm the current [Anthropic CVP tiers, eligibility and security requirements](https://support.claude.com/en/articles/14604842) and the [programme announcement](https://anthropic.com/news/cyber-verification-program), complete the official identity/security flow on the applicant's own account, and supply any private details only through the official program portal. The public text here is an evidence-backed statement, **not** a completed application.
+Confirm the current [Anthropic CVP tiers, eligibility and security requirements](https://support.claude.com/en/articles/14604842) and the [programme announcement](https://anthropic.com/news/cyber-verification-program), complete or manage any required official identity/security process on the applicant's own account, and supply private details only through the official portal. This historical text is **not a current application or approval record**.
 
 **Current maturity:** authentic synthetic proof-of-work with strong reproducibility; independent public-source contribution or accepted external defensive report remains a research goal.

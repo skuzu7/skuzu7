@@ -12,7 +12,9 @@ This is an evidence ledger / forward plan, not a claim of professional credentia
 | 4 | External open-source defensive contribution | Upstream maintainer reviews and accepts a security-hardening/test PR | **Not yet demonstrated** |
 | 5 | Authorized independently accepted security report | Program acknowledgement and permission to publish a redacted finding | **Not yet demonstrated** |
 | 6 | Live model security evaluation with complete provenance | Verified provider run; model/version; repeated trials; raw classifications; negative controls; honest limits | **Not yet run** |
-| 7 | Vendor trusted-access programmes (Anthropic CVP, OpenAI Daybreak) | Official-portal status only. Per Anthropic's published tiers, an individual researcher qualifies for CVP Defense Access with a track record of reported vulnerabilities, and Red Team Access is for organizations; so milestones 4 and 5 come first. Daybreak's individual flow has account-level requirements (paid plan, Advanced Account Security, a FIDO2 hardware key, identity verification) that no repository can satisfy | **Not submitted; blocked on milestones 4–5** |
+| 7 | Anthropic CVP Defense (individual) | The official portal, not public GitHub, determines account-level status. Individual applicants can obtain Defense Access; independent reports help credibility but a LinkedIn/GitHub portfolio alone cannot verify grants. | **Access status not publicly evidenced here; check portal** |
+| 8 | Anthropic CVP Red Team (organization) | Actual eligible organization on Team/Enterprise/API, correct route-specific proof and implemented security controls. [Evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md). | **Organization eligibility and controls not yet evidenced** |
+| 9 | Other restricted vendor programs | Treat each vendor's current official requirements and portal status separately; never infer eligibility from another provider's access. | **Not independently verified here** |
 
 ## Next technical experiments
 
@@ -26,4 +28,4 @@ This is an evidence ledger / forward plan, not a claim of professional credentia
 
 Do not count GitHub commits, number of repositories or fabricated CVEs as accepted vulnerabilities. A public PR is **submitted work**, not an accepted external review until the independent maintainer merges or acknowledges it. A self-authored benchmark is **synthetic research**; CI validates its execution but does not prove state-of-the-art AI safety. Program status cannot be inferred from a GitHub README.
 
-**Working drafts (not client-facing, not submitted):** [CVP Defense Access](APPLICATIONS/ANTHROPIC_CVP_DEFENSE_ACCESS.md) and [Daybreak Blue](APPLICATIONS/OPENAI_DAYBREAK_BLUE.md).
+**Reference drafts (not portal-status records):** [historical CVP Defense statement](APPLICATIONS/ANTHROPIC_CVP_DEFENSE_ACCESS.md), [CVP Red Team evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md), [organizational readiness](APPLICATIONS/ORGANIZATIONAL_CVP_READINESS.md), and [Daybreak Blue notes](APPLICATIONS/OPENAI_DAYBREAK_BLUE.md).
