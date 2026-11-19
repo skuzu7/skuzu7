@@ -1,7 +1,7 @@
 # Institutional Cybersecurity Portfolio — Independent Review Dossier
 
 **Individual researcher / software engineer based in Brazil.**  
-**Evidence status:** public first-party defensive research and software engineering; not state affiliation, a procurement qualification, an audited government system, a CVP membership, a professional certification, or an approved critical-infrastructure testing authority.
+**Evidence status:** public first-party defensive research and software engineering; not evidence of state affiliation, procurement qualification, an audited government system, organizational CVP Red Team access, professional certification, or approved critical-infrastructure testing authority. Individual provider grant status cannot be verified from a GitHub document.
 
 ## Executive scope
 
@@ -31,8 +31,8 @@ Pull requests are proposals until reviewed and merged; CI execution is not exter
 
 | Goal | What can be offered today | Evidence or approval still required |
 | --- | --- | --- |
-| Individual CVP Defense | Public synthetic research, engineering reports, traceable scope | Relevant accepted external vulnerability reporting track record as applicable, provider identity check and approval |
-| Organizational CVP Red Team | Engineering methodology and sample professional templates | Actual legal organization, qualified staff, authorized engagements, organizational MFA/SSO, managed devices and enforceable network controls |
+| Individual CVP Defense | Public synthetic research, engineering reports and traceable scope | Individual account status and applicable security controls must be verified in the official Anthropic portal; independent reports strengthen credibility but do not prove a grant |
+| Organizational CVP Red Team | Engineering methodology and sample professional templates | Actual qualified organization; one documented [eligibility route](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md); required security controls, personnel and authorized work. SSO is a Specialized Access requirement, not a general Red Team requirement |
 | CVP Specialized | No claim of eligibility | Demonstrable authorization from a critical-infrastructure operator, necessity beyond ordinary red-team work, stringent security review and provider decision |
 | Government supplier in Brazil | Technical evidence and sample deliverables | Verified legal/tax registration, procurement eligibility, applicable legal/privacy obligations and an awarded/authorized contract |
 | External research recognition | Reproducible local work | Independent accepted patch/disclosure, third-party review or legally issued credential |
@@ -47,5 +47,7 @@ Before any third-party test: verify owner authority and approved scope, sign rul
 - [Sample rules of engagement](https://github.com/skuzu7/CSA-LAB/blob/main/engagement/rules-of-engagement.md)
 - [Research milestones](RESEARCH_MILESTONES.md)
 - [Reviewer guide](REVIEWER_GUIDE.md)
+
+**Official eligibility reference:** [CVP Red Team evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md) (reviewed 2026-11-19).
 
 **External milestones to earn:** a security patch accepted by an independent maintainer; a vulnerability report acknowledged by an authorized program; independently reviewed model-security measurements with a disclosed methodology; verifiable organizational controls and contracts. **None are declared achieved here.**
