@@ -2,14 +2,15 @@
 
 **Application security · AI-agent security · Software engineering — Brazil**
 
-I test web applications, APIs and AI-agent integrations, and I hand engineering
-teams something they can act on: reproducible findings, computed severity, fixes
-with regression tests, and detection rules for what was found.
+I research web/API security and AI-agent trust boundaries through first-party,
+local and expressly authorized work. My projects emphasize reproducible evidence,
+root-cause analysis, verified fixes, regression tests and documented limitations.
 
-[**Services**](https://github.com/skuzu7/CSA-LAB/blob/main/SERVICES.md) ·
+[**Research and service templates**](https://github.com/skuzu7/CSA-LAB/blob/main/SERVICES.md) ·
 [**Sample report**](https://github.com/skuzu7/CSA-LAB/blob/main/reports/sample-assessment-report.md) ·
 [**Evidence index**](SECURITY_PORTFOLIO.md) ·
-[**LinkedIn**](https://br.linkedin.com/in/antonioccjr)
+[**LinkedIn**](https://br.linkedin.com/in/antonioccjr) ·
+[**Independent reviewer guide**](REVIEWER_GUIDE.md)
 
 ## Institutional-grade research discipline (work in progress)
 
@@ -17,8 +18,10 @@ I maintain an [independent-review portfolio](INSTITUTIONAL_PORTFOLIO.md) and a
 [reviewer guide](REVIEWER_GUIDE.md) linking security claims to inspectable code,
 CI results, test methodology and known limitations. The
 [organizational-readiness plan](APPLICATIONS/ORGANIZATIONAL_CVP_READINESS.md)
-separates real technical evidence from enterprise controls, legal
-authorizations and third-party recognition **not yet achieved**.
+separates publicly verifiable technical evidence from organizational controls,
+permissions and third-party recognition **not evidenced by this portfolio**. The
+[CVP Red Team evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md)
+shows exact eligibility routes, verification standards and remaining gaps.
 
 
 
@@ -33,15 +36,15 @@ authorizations and third-party recognition **not yet achieved**.
 - **AI-agent and LLM application review** — threat model of the agent's tools and
   data, prompt-injection test cases, and a host-side authorization gate design.
 
-Every engagement starts with signed
-[rules of engagement](https://github.com/skuzu7/CSA-LAB/blob/main/engagement/rules-of-engagement.md).
-No written authorization from the system owner, no testing.
+Any external assessment requires prior written authorization and a defined
+[rules-of-engagement process](https://github.com/skuzu7/CSA-LAB/blob/main/engagement/rules-of-engagement.md).
+No owner authorization, no third-party testing.
 
 ## Evidence you can run
 
 | Work | What it shows | Numbers asserted in CI |
 | --- | --- | --- |
-| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) — full assessment cycle | Six vulnerabilities taken from authorization to report: exploit, classify, detect, fix, retest | 6 / 6 exploits reproduce · 6 / 6 fixes pass · CVSS v3.1 computed from vectors (6.5 – 8.6) |
+| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) — full assessment cycle | Six deliberately planted local weaknesses: reproduction, classification, detection, fixes and retesting | 6 / 6 exploits reproduce · 6 / 6 fixes pass · CVSS v3.1 computed from vectors (6.5 – 8.6) |
 | [Detection engineering](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | One Sigma rule per finding, replayed against real requests on the vulnerable and patched builds | 13 / 13 attack requests alerted · 0 / 22 benign alerted · rules parse in pySigma |
 | [Adversary emulation plan](https://github.com/skuzu7/CSA-LAB/blob/main/docs/adversary-emulation-plan.md) | Six-step intrusion chain mapped to MITRE ATT&CK with procedure, telemetry, detection and control per step | Every cell backed by a test |
 | [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) — AI-agent tool-use security | Multi-step replay where the host, not the model, authorizes each tool action; hash-chained traces | 16 paired cases · 26 tests · 8 / 8 scripted off-scope requests denied |
@@ -50,8 +53,9 @@ No written authorization from the system owner, no testing.
 
 **Scope of these claims.** This is lab and first-party work on my own code with
 synthetic data. The AI-agent figures come from scripted controls, not from a live
-model. I do not claim a CVE, a bug-bounty award, a client engagement, a
-certification or membership of any vendor access programme. The
+model. These documents do not establish an externally credited CVE, a bounty award,
+a paid client engagement, an offensive certification or any restricted programme tier;
+account-level access status must be checked in the provider's portal. The
 [reviewer guide](REVIEWER_GUIDE.md) maps each claim to what you can inspect, and
 [milestones](RESEARCH_MILESTONES.md) lists what is not yet demonstrated.
 
