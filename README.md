@@ -1,6 +1,6 @@
 # Antonio Caetano
 
-**Application security · AI-agent security · Software engineering — Brazil**
+**Adversary emulation · Application security · AI-agent security — Brazil**
 
 I research web/API security and AI-agent trust boundaries through first-party,
 local and expressly authorized work. My projects emphasize reproducible evidence,
@@ -27,6 +27,7 @@ shows exact eligibility routes, verification standards and remaining gaps.
 
 ## What I do
 
+- **Red/Purple Team (synthetic adversary emulation)** — build ATT&CK-mapped scenarios, test correlations against explicit negative controls and publish inspectable offline evidence. This is training and first-party research, not a claim of APT attribution or an external red-team engagement.
 - **Web and API security assessment** — manual testing against the OWASP Top 10 and
   API Top 10 classes, reported with root cause, proof, CVSS vector and fix.
 - **Fix and retest** — minimal patches plus a regression test per finding that proves
@@ -44,6 +45,7 @@ No owner authorization, no third-party testing.
 
 | Work | What it shows | Numbers asserted in CI |
 | --- | --- | --- |
+| [MIRRORTRACE](https://github.com/skuzu7/CSA-LAB/tree/main/apt_emulation) — synthetic APT-like emulation | Seven ATT&CK-mapped stages, event correlation, five negative controls, JSON evidence and a CI test step | 10 offline unit tests; 1 synthetic complete-chain case; 5 negative cases |
 | [CSA-LAB](https://github.com/skuzu7/CSA-LAB) — full assessment cycle | Six deliberately planted local weaknesses: reproduction, classification, detection, fixes and retesting | 6 / 6 exploits reproduce · 6 / 6 fixes pass · CVSS v3.1 computed from vectors (6.5 – 8.6) |
 | [Detection engineering](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | One Sigma rule per finding, replayed against real requests on the vulnerable and patched builds | 13 / 13 attack requests alerted · 0 / 22 benign alerted · rules parse in pySigma |
 | [Adversary emulation plan](https://github.com/skuzu7/CSA-LAB/blob/main/docs/adversary-emulation-plan.md) | Six-step intrusion chain mapped to MITRE ATT&CK with procedure, telemetry, detection and control per step | Every cell backed by a test |
