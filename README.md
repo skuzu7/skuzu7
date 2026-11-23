@@ -6,13 +6,38 @@ I research web/API security and AI-agent trust boundaries through first-party,
 local and expressly authorized work. My projects emphasize reproducible evidence,
 root-cause analysis, verified fixes, regression tests and documented limitations.
 
+### Independent review — start here
+
+**[5-minute evidence and CVP/Daybreak index](APPLICATIONS/README.md)** ·
+[Technical reviewer guide](REVIEWER_GUIDE.md) ·
+[Complete research index](SECURITY_PORTFOLIO.md) ·
+[Live CI checks](https://github.com/skuzu7/CSA-LAB/actions)
+
+| First-party work | Direct evidence | Important limitation |
+| --- | --- | --- |
+| [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | Six intentionally planted web-app issues with fixes and regression tests | Not six externally discovered vulnerabilities |
+| [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) | 16 synthetic paired cases and 26 offline tests | Not a live-model security benchmark |
+| [Scoped Agent Evals](https://github.com/skuzu7/CSA-LAB/tree/main/agent_evals) | 24 synthetic cases and 14 tests | Scripted offline research, not a vendor security score |
+| [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | First-party threat model, security review, patch and CI history | Not a commissioned third-party pentest |
+
+**Access eligibility boundary:** the public GitHub establishes **technical evidence, not provider approval**.
+Anthropic CVP **Red Team and Specialized** are organization-only; OpenAI Daybreak **Red** is for
+approved business/enterprise organizations. A profile, lab, CVE count or CNPJ alone is not
+sufficient. See the [CVP Specialized evidence gate](APPLICATIONS/CVP_SPECIALIZED_EVIDENCE_MATRIX.md),
+[CVP Red Team evidence matrix](APPLICATIONS/CVP_RED_TEAM_EVIDENCE_MATRIX.md), and
+[Daybreak Red organizational readiness](APPLICATIONS/DAYBREAK_RED_ORGANIZATIONAL_READINESS.md).
+No accepted external disclosure, paid client engagement, organizational cyber-access tier
+or independent certification is claimed by these public files. Verify all current requirements
+with [Anthropic](https://support.claude.com/en/articles/14604842-cyber-verification-program)
+and [OpenAI](https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview).
+
 [**Research and service templates**](https://github.com/skuzu7/CSA-LAB/blob/main/SERVICES.md) ·
 [**Sample report**](https://github.com/skuzu7/CSA-LAB/blob/main/reports/sample-assessment-report.md) ·
 [**Evidence index**](SECURITY_PORTFOLIO.md) ·
 [**LinkedIn**](https://br.linkedin.com/in/antonioccjr) ·
 [**Independent reviewer guide**](REVIEWER_GUIDE.md)
 
-## Institutional-grade research discipline (work in progress)
+## Evidence-first research discipline (work in progress)
 
 I maintain an [independent-review portfolio](INSTITUTIONAL_PORTFOLIO.md) and a
 [reviewer guide](REVIEWER_GUIDE.md) linking security claims to inspectable code,
