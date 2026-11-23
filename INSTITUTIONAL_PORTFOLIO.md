@@ -16,16 +16,16 @@ For a government or critical-infrastructure reviewer, evidence is more important
 | Reproducible AppSec | [CSA-LAB](https://github.com/skuzu7/CSA-LAB) | [CI](https://github.com/skuzu7/CSA-LAB/actions/workflows/ci.yml), [six findings](https://github.com/skuzu7/CSA-LAB/tree/main/writeups), [patch regressions](https://github.com/skuzu7/CSA-LAB/tree/main/tests/regression) | Planted local vulnerabilities, not external disclosures |
 | Agent-control research | [TRACEGUARD](https://github.com/skuzu7/CSA-LAB/tree/main/agent_replay_lab) | [Methods](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/METHODS.md) and [results](https://github.com/skuzu7/CSA-LAB/blob/main/agent_replay_lab/RESULTS.md) | Scripted offline controls, not a validated live-model security rate |
 | Detection engineering | [Sigma and traffic replay](https://github.com/skuzu7/CSA-LAB/tree/main/detections) | [Detection workflow](https://github.com/skuzu7/CSA-LAB/blob/main/.github/workflows/ci.yml) | Small in-sample synthetic dataset |
-| Browser automation safety | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | [Policy tests](https://github.com/skuzu7/CSA-Obsidian/blob/main/tests/test_policy.py), [CI](https://github.com/skuzu7/CSA-Obsidian/actions/workflows/ci.yml) | Local research, not a production network sandbox |
-| Software hardening | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md) | First-party work; performance workflow had a documented failure on 2026-11-14 |
-| Systems engineering | [claw-code](https://github.com/skuzu7/claw-code) | [Rust CI](https://github.com/skuzu7/claw-code/actions) and source | Distinguish upstream author contributions; no standalone CVP evidence inferred |
+| Browser automation safety (dual-use research) | [CSA-Obsidian](https://github.com/skuzu7/CSA-Obsidian) | [Hardening PR #4](https://github.com/skuzu7/CSA-Obsidian/pull/4), [security-control PR #6](https://github.com/skuzu7/CSA-Obsidian/pull/6), [CI](https://github.com/skuzu7/CSA-Obsidian/actions/workflows/ci.yml) | Sensitive dual-use interface; first-party changes are not an independent audit or proof of safe operation in every deployment |
+| Software hardening | [freeband-nextjs](https://github.com/skuzu7/freeband-nextjs) | [Threat model](https://github.com/skuzu7/freeband-nextjs/blob/main/docs/THREAT_MODEL.md), [review](https://github.com/skuzu7/freeband-nextjs/blob/main/SECURITY_REVIEW.md), [merged CI/performance fix #23](https://github.com/skuzu7/freeband-nextjs/pull/23), [merged lazy-loading fix #24](https://github.com/skuzu7/freeband-nextjs/pull/24) | First-party work; passing CI is not an external security audit |
 
-## Audit-ready change proposals (not yet merged)
+## Merged first-party assurance changes (as checked 2026-11-23)
 
-- [CSA-LAB assurance PR #22](https://github.com/skuzu7/CSA-LAB/pull/22): versioned control register, claim-validation tests and institutional readiness roadmap.
-- [CSA-Obsidian hardening PR #6](https://github.com/skuzu7/CSA-Obsidian/pull/6): secret/session path guard, evidence map and CI defense in depth.
+- [CSA-LAB assurance PR #22](https://github.com/skuzu7/CSA-LAB/pull/22) **merged**: versioned control register, claim-validation tests and institutional readiness roadmap.
+- [CSA-Obsidian hardening PR #6](https://github.com/skuzu7/CSA-Obsidian/pull/6) **merged**: secret/session path guard, evidence map and CI defense in depth.
+- [freeband-nextjs performance PRs #23](https://github.com/skuzu7/freeband-nextjs/pull/23) and [#24](https://github.com/skuzu7/freeband-nextjs/pull/24) **merged**: updated performance measurement and deferred portfolio PDF code until interaction.
 
-Pull requests are proposals until reviewed and merged; CI execution is not external assurance.
+These are merged first-party engineering changes, **not** third-party assurance, independently accepted vulnerability research, or evidence of organizational eligibility. Private repositories are deliberately excluded from the public reviewer evidence table because unauthenticated reviewers cannot inspect them.
 
 ## Program-readiness evidence gates
 
